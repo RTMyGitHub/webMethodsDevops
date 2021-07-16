@@ -27,7 +27,7 @@
 	<target name="startTest" depends="jenkinsCheck">		
 		<var name="failedTestList" value=""/>
 		
-                <!-- interate over the test project and triiger all xml tests in the setup folder -->
+                <!-- interate over the test project and trigger all xml tests in the setup folder -->
                 <for param="testProject" keepgoing="true" trim="true">
 			<path>
 				<dirset dir="${testSuitePackagesPath}" includes="*" excludes=".*,replicate" />

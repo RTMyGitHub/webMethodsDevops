@@ -31,7 +31,7 @@
 			<pmalias name="target">
 				<host>localhost</host>
 				<port>5555</port>
-				<user>Administrator</user>
+				<user>Administrator</user>s	
 				<pwd>{AES}Y5IgMqjfvkgbg7p5VUZztw==</pwd>
 				<useSSL>false</useSSL>
 				<Test>true</Test>
