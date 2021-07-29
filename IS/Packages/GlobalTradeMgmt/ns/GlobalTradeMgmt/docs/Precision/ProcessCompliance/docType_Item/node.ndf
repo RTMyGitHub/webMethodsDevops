@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <record name="record" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_nsName">GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Item</value>
+    <value name="node_pkg">GlobalTradeMgmt</value>
+    <value name="is_public">false</value>
+    <value name="field_name">Item</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">1</value>
+    <value name="nillable">false</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <value name="is_soap_array_encoding_used">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">ItemLine</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <record name="field_content_type" javaclass="com.wm.util.Values">
+          <record name="totalDigits" javaclass="com.wm.util.Values">
+            <record name="FacetTDCValue" javaclass="com.wm.util.Values">
+              <value name="cDecimalValue">10</value>
+            </record>
+            <value name="facetFixed">false</value>
+          </record>
+          <value name="contentType">1</value>
+          <value name="internalType">instance</value>
+          <value name="ct_class">com.wm.lang.schema.datatypev2.WmDecimal</value>
+          <value name="name">int</value>
+          <array name="parent-ancestors" type="record" depth="1">
+            <record javaclass="com.wm.util.Values">
+              <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+              <value name="ncName">anySimpleType</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+              <value name="ncName">decimal</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+              <value name="ncName">integer</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+              <value name="ncName">long</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+              <value name="ncName">anyType</value>
+            </record>
+            <record javaclass="com.wm.util.Values">
+              <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+              <value name="ncName">int</value>
+            </record>
+          </array>
+          <record name="baseType" javaclass="com.wm.util.Values">
+            <record name="minInclusive" javaclass="com.wm.util.Values">
+              <value name="facetFixed">false</value>
+              <value name="primitiveType">4</value>
+              <value name="lexRep">-2147483648</value>
+            </record>
+            <record name="maxInclusive" javaclass="com.wm.util.Values">
+              <value name="facetFixed">false</value>
+              <value name="primitiveType">4</value>
+              <value name="lexRep">2147483647</value>
+            </record>
+            <record name="fractionDigits" javaclass="com.wm.util.Values">
+              <record name="FacetFDCValue" javaclass="com.wm.util.Values">
+                <value name="cDecimalValue">0</value>
+              </record>
+              <value name="facetFixed">true</value>
+            </record>
+            <record name="whiteSpace" javaclass="com.wm.util.Values">
+              <record name="FacetWSCValue" javaclass="com.wm.util.Values">
+                <value name="cDecimalValue">1</value>
+              </record>
+              <value name="facetFixed">true</value>
+            </record>
+            <value name="contentType">1</value>
+            <value name="internalType">instance</value>
+            <value name="ct_class">com.wm.lang.schema.datatypev2.WmDecimal</value>
+            <value name="dataTypeVersion">dtVersion2</value>
+          </record>
+          <value name="dataTypeVersion">dtVersion2</value>
+        </record>
+        <value name="nillable">false</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">Quantity</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <record name="field_content_type" javaclass="com.wm.util.Values">
+          <value name="contentType">1</value>
+          <value name="internalType">reference</value>
+          <value name="dataTypeVersion">dtVersion2</value>
+          <array name="targetNames" type="record" depth="1">
+            <record javaclass="com.wm.util.Values">
+              <value name="ncName">Quantity</value>
+            </record>
+          </array>
+          <value name="targetOwnerNSName">GlobalTradeMgmt.docs.Precision.ProcessCompliance:schema_ProcessComplianceRequest</value>
+        </record>
+        <value name="nillable">false</value>
+        <value name="form_qualified">true</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">QuantityUOM</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <record name="field_content_type" javaclass="com.wm.util.Values">
+          <value name="contentType">1</value>
+          <value name="internalType">reference</value>
+          <value name="dataTypeVersion">dtVersion2</value>
+          <array name="targetNames" type="record" depth="1">
+            <record javaclass="com.wm.util.Values">
+              <value name="ncName">UOM</value>
+            </record>
+          </array>
+          <value name="targetOwnerNSName">GlobalTradeMgmt.docs.Precision.ProcessCompliance:schema_ProcessComplianceRequest</value>
+        </record>
+        <value name="nillable">false</value>
+        <value name="form_qualified">true</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">Price</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <record name="field_content_type" javaclass="com.wm.util.Values">
+          <value name="contentType">1</value>
+          <value name="internalType">reference</value>
+          <value name="dataTypeVersion">dtVersion2</value>
+          <array name="targetNames" type="record" depth="1">
+            <record javaclass="com.wm.util.Values">
+              <value name="ncName">Price</value>
+            </record>
+          </array>
+          <value name="targetOwnerNSName">GlobalTradeMgmt.docs.Precision.ProcessCompliance:schema_ProcessComplianceRequest</value>
+        </record>
+        <value name="nillable">false</value>
+        <value name="form_qualified">true</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">Currency</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <record name="field_content_type" javaclass="com.wm.util.Values">
+          <value name="contentType">1</value>
+          <value name="internalType">reference</value>
+          <value name="dataTypeVersion">dtVersion2</value>
+          <array name="targetNames" type="record" depth="1">
+            <record javaclass="com.wm.util.Values">
+              <value name="ncName">Currency</value>
+            </record>
+          </array>
+          <value name="targetOwnerNSName">GlobalTradeMgmt.docs.Precision.ProcessCompliance:schema_ProcessComplianceRequest</value>
+        </record>
+        <value name="nillable">false</value>
+        <value name="form_qualified">true</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">GrossWeight</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <record name="field_content_type" javaclass="com.wm.util.Values">
+          <value name="contentType">1</value>
+          <value name="internalType">reference</value>
+          <value name="dataTypeVersion">dtVersion2</value>
+          <array name="targetNames" type="record" depth="1">
+            <record javaclass="com.wm.util.Values">
+              <value name="ncName">Weight</value>
+            </record>
+          </array>
+          <value name="targetOwnerNSName">GlobalTradeMgmt.docs.Precision.ProcessCompliance:schema_ProcessComplianceRequest</value>
+        </record>
+        <value name="nillable">false</value>
+        <value name="form_qualified">true</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">WeightUOM</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <record name="field_content_type" javaclass="com.wm.util.Values">
+          <value name="contentType">1</value>
+          <value name="internalType">reference</value>
+          <value name="dataTypeVersion">dtVersion2</value>
+          <array name="targetNames" type="record" depth="1">
+            <record javaclass="com.wm.util.Values">
+              <value name="ncName">UOM</value>
+            </record>
+          </array>
+          <value name="targetOwnerNSName">GlobalTradeMgmt.docs.Precision.ProcessCompliance:schema_ProcessComplianceRequest</value>
+        </record>
+        <value name="nillable">false</value>
+        <value name="form_qualified">true</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">Volume</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <record name="field_content_type" javaclass="com.wm.util.Values">
+          <value name="contentType">1</value>
+          <value name="internalType">reference</value>
+          <value name="dataTypeVersion">dtVersion2</value>
+          <array name="targetNames" type="record" depth="1">
+            <record javaclass="com.wm.util.Values">
+              <value name="ncName">Volume</value>
+            </record>
+          </array>
+          <value name="targetOwnerNSName">GlobalTradeMgmt.docs.Precision.ProcessCompliance:schema_ProcessComplianceRequest</value>
+        </record>
+        <value name="nillable">false</value>
+        <value name="form_qualified">true</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">VolumeUOM</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <record name="field_content_type" javaclass="com.wm.util.Values">
+          <value name="contentType">1</value>
+          <value name="internalType">reference</value>
+          <value name="dataTypeVersion">dtVersion2</value>
+          <array name="targetNames" type="record" depth="1">
+            <record javaclass="com.wm.util.Values">
+              <value name="ncName">UOM</value>
+            </record>
+          </array>
+          <value name="targetOwnerNSName">GlobalTradeMgmt.docs.Precision.ProcessCompliance:schema_ProcessComplianceRequest</value>
+        </record>
+        <value name="nillable">false</value>
+        <value name="form_qualified">true</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="is_public">false</value>
+        <value name="field_name">Product</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">false</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Product</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="is_public">false</value>
+        <value name="field_name">Party</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">1</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">false</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Party</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">CountryOfOrigin</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <record name="field_content_type" javaclass="com.wm.util.Values">
+          <value name="contentType">1</value>
+          <value name="internalType">reference</value>
+          <value name="dataTypeVersion">dtVersion2</value>
+          <array name="targetNames" type="record" depth="1">
+            <record javaclass="com.wm.util.Values">
+              <value name="ncName">IsoCountryCode</value>
+            </record>
+          </array>
+          <value name="targetOwnerNSName">GlobalTradeMgmt.docs.Precision.ProcessCompliance:schema_ProcessComplianceRequest</value>
+        </record>
+        <value name="nillable">false</value>
+        <value name="form_qualified">true</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">CountryOfDestination</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <record name="field_content_type" javaclass="com.wm.util.Values">
+          <value name="contentType">1</value>
+          <value name="internalType">reference</value>
+          <value name="dataTypeVersion">dtVersion2</value>
+          <array name="targetNames" type="record" depth="1">
+            <record javaclass="com.wm.util.Values">
+              <value name="ncName">IsoCountryCode</value>
+            </record>
+          </array>
+          <value name="targetOwnerNSName">GlobalTradeMgmt.docs.Precision.ProcessCompliance:schema_ProcessComplianceRequest</value>
+        </record>
+        <value name="nillable">false</value>
+        <value name="form_qualified">true</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">CountryOfUltimateDestination</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <record name="field_content_type" javaclass="com.wm.util.Values">
+          <value name="contentType">1</value>
+          <value name="internalType">reference</value>
+          <value name="dataTypeVersion">dtVersion2</value>
+          <array name="targetNames" type="record" depth="1">
+            <record javaclass="com.wm.util.Values">
+              <value name="ncName">IsoCountryCode</value>
+            </record>
+          </array>
+          <value name="targetOwnerNSName">GlobalTradeMgmt.docs.Precision.ProcessCompliance:schema_ProcessComplianceRequest</value>
+        </record>
+        <value name="nillable">false</value>
+        <value name="form_qualified">true</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="is_public">false</value>
+        <value name="field_name">CustomerDefinedFields</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">false</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_CustomerDefinedFields</value>
+      </record>
+    </array>
+    <value name="rec_closed">true</value>
+    <value name="originURI">file:///C:\Projects\Precision\compliance\ProcessComplianceRequest.xsd</value>
+    <value name="modifiable">false</value>
+  </record>
+</Values>

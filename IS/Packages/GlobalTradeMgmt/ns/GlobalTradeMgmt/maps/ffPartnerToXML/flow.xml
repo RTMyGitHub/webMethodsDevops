@@ -1,0 +1,2814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<SEQUENCE TIMEOUT="" EXIT-ON="SUCCESS">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<SEQUENCE TIMEOUT="" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP TIMEOUT="" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="field_name">PartnerInbound</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs:sPartnerInboundDT</value>
+      </record>
+    </array>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="field_name">PartnerInbound</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs:sPartnerInboundDT</value>
+      </record>
+    </array>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPINVOKE SERVICE="pub.string:trim" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/SenderID;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/SenderID;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPINVOKE SERVICE="pub.string:trim" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Type;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Type;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPINVOKE SERVICE="pub.string:trim" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/ID;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/ID;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPINVOKE SERVICE="pub.string:trim" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Name2;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Name2;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPINVOKE SERVICE="pub.string:trim" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Address1;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Address1;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPINVOKE SERVICE="pub.string:trim" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Address2;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Address2;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPINVOKE SERVICE="pub.string:trim" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Address3;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Address3;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPINVOKE SERVICE="pub.string:trim" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Address4;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Address4;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPINVOKE SERVICE="pub.string:trim" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/City;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/City;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPINVOKE SERVICE="pub.string:trim" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/PostalCode;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/PostalCode;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPINVOKE SERVICE="pub.string:trim" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Country;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Country;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPINVOKE SERVICE="pub.string:trim" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/ReceiverID;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/ReceiverID;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPINVOKE SERVICE="pub.string:trim" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Name1;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Name1;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPINVOKE SERVICE="pub.string:trim" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Client;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Client;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/DeleteInd;1;0" TO="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/DeleteInd;1;0">
+</MAPCOPY>
+</MAP>
+
+<INVOKE TIMEOUT="" SERVICE="pub.date:getCurrentDateString" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_name">getCurrentDateStringInput</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="field_name">pattern</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="field_name">timezone</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="field_name">locale</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+    </array>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/pattern;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">yyyy-MM-dd'T'hh:mm:ss-00:00</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">unknown</value>
+    <value name="field_name">pattern</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+
+<MAP MODE="OUTPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="field_name">pattern</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="field_name">PartnerInbound</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs:sPartnerInboundDT</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="field_name">date</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="field_name">value</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_name">getCurrentDateStringOutput</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="field_name">value</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/date;1;0">
+</MAPCOPY>
+
+<MAPDELETE FIELD="/value;1;0">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/pattern;1;0">
+</MAPDELETE>
+</MAP>
+</INVOKE>
+
+<SEQUENCE TIMEOUT="" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP TIMEOUT="" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="field_name">PartnerInbound</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs:sPartnerInboundDT</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="field_name">ProcessComplianceRequest</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest</value>
+      </record>
+    </array>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="field_name">PartnerInbound</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs:sPartnerInboundDT</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="field_name">date</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPINVOKE SERVICE="pub.string:HTMLEncode" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Name1;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/Transactions;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Transactions/Parties;2;0/Party;4;1;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Party/Name;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/ReceiverID;1;0" TO="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/ApplicationArea;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ApplicationArea/Sender;2;0/ReferenceId;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/SenderID;1;0" TO="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/ApplicationArea;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ApplicationArea/Sender;2;0/LogicalId;1;0">
+</MAPCOPY>
+
+<MAPINVOKE SERVICE="pub.string:HTMLEncode" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Type;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/References;2;0/SourceReference;4;1;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_SourceReference/SourceReferenceKey4;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/value;1;0" TO="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/Transactions;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Transactions/Parties;2;0/Party;4;1;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Party/PartyType;1;1">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPINVOKE SERVICE="pub.string:HTMLEncode" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/ID;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/References;2;0/SourceReference;4;1;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_SourceReference/SourceReferenceKey2;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/value;1;0" TO="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/Transactions;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Transactions/Parties;2;0/Party;4;1;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Party/PartyId;2;0/Id;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPINVOKE SERVICE="pub.string:HTMLEncode" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Name2;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/Transactions;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Transactions/Parties;2;0/Party;4;1;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Party/PartyAddress;2;0/AddressLine1;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPINVOKE SERVICE="pub.string:HTMLEncode" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Address1;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/Transactions;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Transactions/Parties;2;0/Party;4;1;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Party/PartyAddress;2;0/AddressLine2;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPINVOKE SERVICE="pub.string:HTMLEncode" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Address2;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/Transactions;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Transactions/Parties;2;0/Party;4;1;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Party/PartyAddress;2;0/AddressLine3;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPINVOKE SERVICE="pub.string:HTMLEncode" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Address3;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/Transactions;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Transactions/Parties;2;0/Party;4;1;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Party/PartyAddress;2;0/AddressLine4;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPINVOKE SERVICE="pub.string:HTMLEncode" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Address4;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/Transactions;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Transactions/Parties;2;0/Party;4;1;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Party/PartyAddress;2;0/AddressLine5;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPINVOKE SERVICE="pub.string:HTMLEncode" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/City;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/Transactions;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Transactions/Parties;2;0/Party;4;1;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Party/PartyAddress;2;0/City;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPINVOKE SERVICE="pub.string:HTMLEncode" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/StatePostal;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/Transactions;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Transactions/Parties;2;0/Party;4;1;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Party/PartyAddress;2;0/PostalCode;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPINVOKE SERVICE="pub.string:HTMLEncode" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Country;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/Transactions;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Transactions/Parties;2;0/Party;4;1;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Party/PartyAddress;2;0/Country;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPINVOKE SERVICE="pub.string:HTMLEncode" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/Client;1;0" TO="/inString;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/value;1;0" TO="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/Client;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/value;1;0" TO="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/References;2;0/SourceReference;4;1;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_SourceReference/SourceReferenceKey1;1;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/ApplicationArea;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ApplicationArea/Sender;2;0/UniqueMessageId;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">001</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_name">UniqueMessageId</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <record name="field_content_type" javaclass="com.wm.util.Values">
+      <record name="maxLength" javaclass="com.wm.util.Values">
+        <record name="FMaxLenCValue" javaclass="com.wm.util.Values">
+          <value name="cDecimalValue">15</value>
+        </record>
+        <value name="facetFixed">false</value>
+      </record>
+      <value name="contentType">1</value>
+      <value name="internalType">instance</value>
+      <value name="ct_class">com.wm.lang.schema.datatypev2.WmString</value>
+      <value name="name">string</value>
+      <array name="parent-ancestors" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">anySimpleType</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">anyType</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">string</value>
+        </record>
+      </array>
+      <record name="baseType" javaclass="com.wm.util.Values">
+        <record name="whiteSpace" javaclass="com.wm.util.Values">
+          <record name="FacetWSCValue" javaclass="com.wm.util.Values">
+            <value name="cDecimalValue">3</value>
+          </record>
+          <value name="facetFixed">false</value>
+        </record>
+        <value name="contentType">1</value>
+        <value name="internalType">instance</value>
+        <value name="ct_class">com.wm.lang.schema.datatypev2.WmString</value>
+        <value name="dataTypeVersion">dtVersion2</value>
+      </record>
+      <value name="dataTypeVersion">dtVersion2</value>
+    </record>
+    <value name="nillable">false</value>
+    <value name="form_qualified">true</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPCOPY FROM="/date;1;0" TO="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/ApplicationArea;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ApplicationArea/CreationDateTime;1;0">
+</MAPCOPY>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/Process;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Process/@confirm;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">Always</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">unknown</value>
+    <value name="field_name">@confirm</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <record name="field_content_type" javaclass="com.wm.util.Values">
+      <value name="contentType">1</value>
+      <value name="internalType">reference</value>
+      <value name="dataTypeVersion">dtVersion2</value>
+      <array name="targetNames" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">string</value>
+        </record>
+      </array>
+    </record>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/References;2;0/SourceReference;4;1;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_SourceReference/IsPrimaryReference;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">true</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">unknown</value>
+    <value name="field_name">IsPrimaryReference</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <record name="field_content_type" javaclass="com.wm.util.Values">
+      <value name="contentType">1</value>
+      <value name="internalType">reference</value>
+      <value name="dataTypeVersion">dtVersion2</value>
+      <array name="targetNames" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">boolean</value>
+        </record>
+      </array>
+    </record>
+    <value name="nillable">false</value>
+    <value name="form_qualified">true</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/ResultType;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">Short</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">unknown</value>
+    <value name="field_name">ResultType</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <value name="field_opt">true</value>
+    <record name="field_content_type" javaclass="com.wm.util.Values">
+      <array name="enumeration" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="primitiveType">0</value>
+          <value name="lexRep">Short</value>
+          <value name="isList">false</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="primitiveType">0</value>
+          <value name="lexRep">Intermediate</value>
+          <value name="isList">false</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="primitiveType">0</value>
+          <value name="lexRep">Complete</value>
+          <value name="isList">false</value>
+        </record>
+      </array>
+      <value name="contentType">1</value>
+      <value name="internalType">instance</value>
+      <value name="ct_class">com.wm.lang.schema.datatypev2.WmString</value>
+      <value name="name">string</value>
+      <array name="parent-ancestors" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">anySimpleType</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">anyType</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">string</value>
+        </record>
+      </array>
+      <record name="baseType" javaclass="com.wm.util.Values">
+        <record name="whiteSpace" javaclass="com.wm.util.Values">
+          <record name="FacetWSCValue" javaclass="com.wm.util.Values">
+            <value name="cDecimalValue">3</value>
+          </record>
+          <value name="facetFixed">false</value>
+        </record>
+        <value name="contentType">1</value>
+        <value name="internalType">instance</value>
+        <value name="ct_class">com.wm.lang.schema.datatypev2.WmString</value>
+        <value name="dataTypeVersion">dtVersion2</value>
+      </record>
+      <value name="dataTypeVersion">dtVersion2</value>
+    </record>
+    <value name="nillable">false</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/References;2;0/SourceReference;4;1;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_SourceReference/SourceReferenceKey3;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">BP_DPL</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">unknown</value>
+    <value name="field_name">SourceReferenceKey3</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <value name="field_opt">true</value>
+    <record name="field_content_type" javaclass="com.wm.util.Values">
+      <record name="maxLength" javaclass="com.wm.util.Values">
+        <record name="FMaxLenCValue" javaclass="com.wm.util.Values">
+          <value name="cDecimalValue">20</value>
+        </record>
+        <value name="facetFixed">false</value>
+      </record>
+      <value name="contentType">1</value>
+      <value name="internalType">instance</value>
+      <value name="ct_class">com.wm.lang.schema.datatypev2.WmString</value>
+      <value name="name">string</value>
+      <array name="parent-ancestors" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">anySimpleType</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">anyType</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">string</value>
+        </record>
+      </array>
+      <record name="baseType" javaclass="com.wm.util.Values">
+        <record name="whiteSpace" javaclass="com.wm.util.Values">
+          <record name="FacetWSCValue" javaclass="com.wm.util.Values">
+            <value name="cDecimalValue">3</value>
+          </record>
+          <value name="facetFixed">false</value>
+        </record>
+        <value name="contentType">1</value>
+        <value name="internalType">instance</value>
+        <value name="ct_class">com.wm.lang.schema.datatypev2.WmString</value>
+        <value name="dataTypeVersion">dtVersion2</value>
+      </record>
+      <value name="dataTypeVersion">dtVersion2</value>
+    </record>
+    <value name="nillable">false</value>
+    <value name="form_qualified">true</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPDELETE FIELD="/date;1;0">
+</MAPDELETE>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/Transactions;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Transactions/Parties;2;0/ComplianceChecks;2;0/PartyCheckType;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_PartyCheckType/Type;1;1">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <array name="xml" type="value" depth="1">
+    <value>DeniedPartyList</value>
+  </array>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">unknown</value>
+    <value name="field_name">Type</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">1</value>
+    <record name="field_content_type" javaclass="com.wm.util.Values">
+      <value name="contentType">1</value>
+      <value name="internalType">reference</value>
+      <value name="dataTypeVersion">dtVersion2</value>
+      <array name="targetNames" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="ncName">PartyCheckTypeType</value>
+        </record>
+      </array>
+      <value name="targetOwnerNSName">GlobalTradeMgmt.docs.Precision.ProcessCompliance:schema_ProcessComplianceRequest</value>
+    </record>
+    <value name="nillable">false</value>
+    <value name="form_qualified">true</value>
+    <value name="is_global">false</value>
+    <value name="is_soap_array_encoding_used">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/Transactions;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Transactions/Parties;2;0/ComplianceChecks;2;0/PartyCheckType;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_PartyCheckType/Source;1;1">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <array name="xml" type="value" depth="1">
+    <value>ALL</value>
+  </array>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">unknown</value>
+    <value name="field_name">Source</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">1</value>
+    <record name="field_content_type" javaclass="com.wm.util.Values">
+      <value name="contentType">1</value>
+      <value name="internalType">reference</value>
+      <value name="dataTypeVersion">dtVersion2</value>
+      <array name="targetNames" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">string</value>
+        </record>
+      </array>
+    </record>
+    <value name="nillable">false</value>
+    <value name="form_qualified">true</value>
+    <value name="is_global">false</value>
+    <value name="is_soap_array_encoding_used">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/Transactions;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Transactions/Parties;2;0/ComplianceChecks;2;0/CountryCheckType;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_CountryCheckType/Type;1;1">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <array name="xml" type="value" depth="1">
+    <value>EmbargoedCountry</value>
+  </array>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">unknown</value>
+    <value name="field_name">Type</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">1</value>
+    <record name="field_content_type" javaclass="com.wm.util.Values">
+      <value name="contentType">1</value>
+      <value name="internalType">reference</value>
+      <value name="dataTypeVersion">dtVersion2</value>
+      <array name="targetNames" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="ncName">CountryCheckTypeType</value>
+        </record>
+      </array>
+      <value name="targetOwnerNSName">GlobalTradeMgmt.docs.Precision.ProcessCompliance:schema_ProcessComplianceRequest</value>
+    </record>
+    <value name="nillable">false</value>
+    <value name="form_qualified">true</value>
+    <value name="is_global">false</value>
+    <value name="is_soap_array_encoding_used">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/Transactions;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Transactions/Parties;2;0/Party;4;1;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Party/PartyId;2;0/Source;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">Fisher</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_name">Source</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <record name="field_content_type" javaclass="com.wm.util.Values">
+      <value name="contentType">1</value>
+      <value name="internalType">reference</value>
+      <value name="dataTypeVersion">dtVersion2</value>
+      <array name="targetNames" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">string</value>
+        </record>
+      </array>
+    </record>
+    <value name="nillable">false</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">true</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/Transactions;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Transactions/TransactionType;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">NR</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">unknown</value>
+    <value name="field_name">TransactionType</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <record name="field_content_type" javaclass="com.wm.util.Values">
+      <value name="contentType">1</value>
+      <value name="internalType">reference</value>
+      <value name="dataTypeVersion">dtVersion2</value>
+      <array name="targetNames" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">string</value>
+        </record>
+      </array>
+    </record>
+    <value name="nillable">false</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+
+<MAP TIMEOUT="" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="field_name">PartnerInbound</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs:sPartnerInboundDT</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="field_name">SourceReference</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_SourceReference</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="field_name">ProcessComplianceRequest</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest</value>
+      </record>
+    </array>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="field_name">PartnerInbound</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs:sPartnerInboundDT</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="field_name">ProcessComplianceRequest</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest</value>
+      </record>
+    </array>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/SenderID;1;0" TO="/SourceReference;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_SourceReference/SourceReferenceKey1;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/PartnerInbound;4;0;GlobalTradeMgmt.docs:sPartnerInboundDT/PartnerInbound;2;0/ReceiverID;1;0" TO="/SourceReference;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_SourceReference/SourceReferenceKey2;1;0">
+</MAPCOPY>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/SourceReference;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_SourceReference/IsPrimaryReference;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">false</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">unknown</value>
+    <value name="field_name">IsPrimaryReference</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <record name="field_content_type" javaclass="com.wm.util.Values">
+      <value name="contentType">1</value>
+      <value name="internalType">reference</value>
+      <value name="dataTypeVersion">dtVersion2</value>
+      <array name="targetNames" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">boolean</value>
+        </record>
+      </array>
+    </record>
+    <value name="nillable">false</value>
+    <value name="form_qualified">true</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+
+<INVOKE TIMEOUT="" SERVICE="pub.list:appendToDocumentList" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_name">appendToDocumentListInput</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="field_name">toList</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">1</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="field_name">fromList</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">1</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="field_name">fromItem</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+      </record>
+    </array>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="field_name">PartnerInbound</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs:sPartnerInboundDT</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="field_name">SourceReference</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_SourceReference</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="field_name">ProcessComplianceRequest</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest</value>
+      </record>
+    </array>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/SourceReference;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_SourceReference" TO="/fromItem;2;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/References;2;0/SourceReference;4;1;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_SourceReference" TO="/toList;2;1">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="OUTPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="field_name">toList</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">1</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="field_name">PartnerInbound</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs:sPartnerInboundDT</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="field_name">fromItem</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="field_name">SourceReference</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_SourceReference</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="field_name">ProcessComplianceRequest</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest</value>
+      </record>
+    </array>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_name">appendToDocumentListOutput</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="field_name">toList</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">1</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+      </record>
+    </array>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/toList;2;1" TO="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/References;2;0/SourceReference;4;1;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_SourceReference">
+</MAPCOPY>
+
+<MAPDELETE FIELD="/SourceReference;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_SourceReference">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/toList;2;1">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/fromItem;2;0">
+</MAPDELETE>
+</MAP>
+</INVOKE>
+</SEQUENCE>
+
+<BRANCH TIMEOUT="" SWITCH="/PartnerInbound/PartnerInbound/CustOwnerCode">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<BRANCH NAME="YES" TIMEOUT="" SWITCH="/PartnerInbound/PartnerInbound/Type">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP NAME="Consignee" TIMEOUT="" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="field_name">PartnerInbound</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs:sPartnerInboundDT</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="field_name">ProcessComplianceRequest</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest</value>
+      </record>
+    </array>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+    </array>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/Transactions;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Transactions/ComplianceChecks;2;0/QuestionCheckType;4;1;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_QuestionCheckType/Type;1;1">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <array name="xml" type="value" depth="1">
+    <value>CCGPARTNER</value>
+  </array>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">unknown</value>
+    <value name="field_name">Type</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">1</value>
+    <record name="field_content_type" javaclass="com.wm.util.Values">
+      <value name="contentType">1</value>
+      <value name="internalType">instance</value>
+      <value name="ct_class">com.wm.lang.schema.datatypev2.WmString</value>
+      <value name="name">string</value>
+      <array name="parent-ancestors" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">anySimpleType</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">anyType</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">string</value>
+        </record>
+      </array>
+      <record name="baseType" javaclass="com.wm.util.Values">
+        <record name="whiteSpace" javaclass="com.wm.util.Values">
+          <record name="FacetWSCValue" javaclass="com.wm.util.Values">
+            <value name="cDecimalValue">3</value>
+          </record>
+          <value name="facetFixed">false</value>
+        </record>
+        <value name="contentType">1</value>
+        <value name="internalType">instance</value>
+        <value name="ct_class">com.wm.lang.schema.datatypev2.WmString</value>
+        <value name="dataTypeVersion">dtVersion2</value>
+      </record>
+      <value name="dataTypeVersion">dtVersion2</value>
+    </record>
+    <value name="nillable">false</value>
+    <value name="form_qualified">true</value>
+    <value name="is_global">false</value>
+    <value name="is_soap_array_encoding_used">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/Transactions;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Transactions/ComplianceChecks;2;0/QuestionCheckType;4;1;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_QuestionCheckType/Level;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml"></value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">unknown</value>
+    <value name="field_name">Level</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <record name="field_content_type" javaclass="com.wm.util.Values">
+      <value name="contentType">1</value>
+      <value name="internalType">reference</value>
+      <value name="dataTypeVersion">dtVersion2</value>
+      <array name="targetNames" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">string</value>
+        </record>
+      </array>
+    </record>
+    <value name="nillable">false</value>
+    <value name="form_qualified">true</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+
+<MAP NAME="BillTo" TIMEOUT="" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="field_name">PartnerInbound</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs:sPartnerInboundDT</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="field_name">ProcessComplianceRequest</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest</value>
+      </record>
+    </array>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+    </array>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/Transactions;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Transactions/ComplianceChecks;2;0/QuestionCheckType;4;1;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_QuestionCheckType/Level;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml"></value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">unknown</value>
+    <value name="field_name">Level</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <record name="field_content_type" javaclass="com.wm.util.Values">
+      <value name="contentType">1</value>
+      <value name="internalType">reference</value>
+      <value name="dataTypeVersion">dtVersion2</value>
+      <array name="targetNames" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">string</value>
+        </record>
+      </array>
+    </record>
+    <value name="nillable">false</value>
+    <value name="form_qualified">true</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest/ProcessComplianceRequest;2;0/DataArea;2;0/ComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_ComplianceRequest/Transactions;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_Transactions/ComplianceChecks;2;0/QuestionCheckType;4;1;GlobalTradeMgmt.docs.Precision.ProcessCompliance:docType_QuestionCheckType/Type;1;1">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <array name="xml" type="value" depth="1">
+    <value>CCGBILLTOS</value>
+  </array>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">unknown</value>
+    <value name="field_name">Type</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">1</value>
+    <record name="field_content_type" javaclass="com.wm.util.Values">
+      <value name="contentType">1</value>
+      <value name="internalType">instance</value>
+      <value name="ct_class">com.wm.lang.schema.datatypev2.WmString</value>
+      <value name="name">string</value>
+      <array name="parent-ancestors" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">anySimpleType</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">anyType</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">string</value>
+        </record>
+      </array>
+      <record name="baseType" javaclass="com.wm.util.Values">
+        <record name="whiteSpace" javaclass="com.wm.util.Values">
+          <record name="FacetWSCValue" javaclass="com.wm.util.Values">
+            <value name="cDecimalValue">3</value>
+          </record>
+          <value name="facetFixed">false</value>
+        </record>
+        <value name="contentType">1</value>
+        <value name="internalType">instance</value>
+        <value name="ct_class">com.wm.lang.schema.datatypev2.WmString</value>
+        <value name="dataTypeVersion">dtVersion2</value>
+      </record>
+      <value name="dataTypeVersion">dtVersion2</value>
+    </record>
+    <value name="nillable">false</value>
+    <value name="form_qualified">true</value>
+    <value name="is_global">false</value>
+    <value name="is_soap_array_encoding_used">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+</BRANCH>
+</BRANCH>
+
+<INVOKE TIMEOUT="" SERVICE="pub.xml:documentToXMLString" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_name">documentToXMLStringInput</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">attrPrefix</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="is_public">false</value>
+        <value name="field_name">document</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="is_public">false</value>
+        <value name="field_name">nsDecls</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">addHeader</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>true</value>
+          <value>false</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">encode</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>true</value>
+          <value>false</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">documentTypeName</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">generateRequiredTags</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>false</value>
+          <value>true</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">generateNilTags</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>false</value>
+          <value>true</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">enforceLegalXML</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>true</value>
+          <value>false</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="is_public">false</value>
+        <value name="field_name">dtdHeaderInfo</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">bufferSize</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">PartnerInbound</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs:sPartnerInboundDT</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="is_public">false</value>
+        <value name="field_name">ProcessComplianceRequest</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/ProcessComplianceRequest;4;0;GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest" TO="/document;2;0">
+</MAPCOPY>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/documentTypeName;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">unknown</value>
+    <value name="field_name">documentTypeName</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <value name="field_opt">true</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+
+<MAP MODE="OUTPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">PartnerInbound</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs:sPartnerInboundDT</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="is_public">false</value>
+        <value name="field_name">document</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="is_public">false</value>
+        <value name="field_name">ProcessComplianceRequest</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">documentTypeName</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">xmldata</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">xmlOrder</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_name">documentToXMLStringOutput</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">xmldata</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPDELETE FIELD="/document;2;0">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/documentTypeName;1;0">
+</MAPDELETE>
+
+<MAPCOPY FROM="/xmldata;1;0" TO="/xmlOrder;1;0">
+</MAPCOPY>
+
+<MAPDELETE FIELD="/xmldata;1;0">
+</MAPDELETE>
+</MAP>
+</INVOKE>
+</SEQUENCE>
+
+<SEQUENCE TIMEOUT="" EXIT-ON="DONE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<INVOKE TIMEOUT="" SERVICE="pub.flow:getLastError" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+</MAP>
+
+<MAP MODE="OUTPUT">
+</MAP>
+</INVOKE>
+
+<INVOKE TIMEOUT="" SERVICE="EventHandling.process:generateEvent" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_name">generateEvent</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="field_name">exceptionInfo</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="rec_ref">pub.event:exceptionInfo</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="field_name">EventMsg</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="rec_ref">EventHandling.docs:EventMsg</value>
+      </record>
+    </array>
+    <value name="rec_closed">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="field_name">PartnerInbound</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs:sPartnerInboundDT</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="field_name">ProcessComplianceRequest</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="field_name">lastError</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_ref">pub.event:exceptionInfo</value>
+      </record>
+    </array>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY NAME="Link" FROM="/lastError;4;0;pub.event:exceptionInfo" TO="/exceptionInfo;4;0;pub.event:exceptionInfo">
+</MAPCOPY>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/EventMsg;4;0;EventHandling.docs:EventMsg/EventMsg;2;0/Application;2;0/Event;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">General</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">unknown</value>
+    <value name="node_comment"></value>
+    <record name="node_hints" javaclass="com.wm.util.Values">
+      <null name="field_usereditable"/>
+      <value name="field_largerEditor">false</value>
+      <value name="field_password">false</value>
+    </record>
+    <value name="field_name">Event</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <record name="field_content_type" javaclass="com.wm.util.Values">
+      <value name="contentType">1</value>
+      <value name="internalType">reference</value>
+      <value name="dataTypeVersion">dtVersion2</value>
+      <array name="targetNames" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">string</value>
+        </record>
+      </array>
+    </record>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/EventMsg;4;0;EventHandling.docs:EventMsg/EventMsg;2;0/Application;2;0/Level;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">ERROR</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">unknown</value>
+    <value name="node_comment"></value>
+    <record name="node_hints" javaclass="com.wm.util.Values">
+      <null name="field_usereditable"/>
+      <value name="field_largerEditor">false</value>
+      <value name="field_password">false</value>
+    </record>
+    <value name="field_name">Level</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <record name="field_content_type" javaclass="com.wm.util.Values">
+      <array name="enumeration" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="primitiveType">0</value>
+          <value name="lexRep">DEBUG</value>
+          <value name="isList">false</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="primitiveType">0</value>
+          <value name="lexRep">INFO</value>
+          <value name="isList">false</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="primitiveType">0</value>
+          <value name="lexRep">WARN</value>
+          <value name="isList">false</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="primitiveType">0</value>
+          <value name="lexRep">ERROR</value>
+          <value name="isList">false</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="primitiveType">0</value>
+          <value name="lexRep">FATAL</value>
+          <value name="isList">false</value>
+        </record>
+      </array>
+      <value name="contentType">1</value>
+      <value name="internalType">instance</value>
+      <value name="ct_class">com.wm.lang.schema.datatypev2.WmString</value>
+      <value name="name">string</value>
+      <array name="parent-ancestors" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">anySimpleType</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">anyType</value>
+        </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">string</value>
+        </record>
+      </array>
+      <record name="baseType" javaclass="com.wm.util.Values">
+        <record name="whiteSpace" javaclass="com.wm.util.Values">
+          <record name="FacetWSCValue" javaclass="com.wm.util.Values">
+            <value name="cDecimalValue">3</value>
+          </record>
+          <value name="facetFixed">false</value>
+        </record>
+        <value name="contentType">1</value>
+        <value name="internalType">instance</value>
+        <value name="ct_class">com.wm.lang.schema.datatypev2.WmString</value>
+        <value name="dataTypeVersion">dtVersion2</value>
+      </record>
+      <value name="dataTypeVersion">dtVersion2</value>
+    </record>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/EventMsg;4;0;EventHandling.docs:EventMsg/EventMsg;2;0/Application;2;0/Name;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">GlobalTradeMgmt</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">unknown</value>
+    <value name="node_comment"></value>
+    <record name="node_hints" javaclass="com.wm.util.Values">
+      <null name="field_usereditable"/>
+      <value name="field_largerEditor">false</value>
+      <value name="field_password">false</value>
+    </record>
+    <value name="field_name">Name</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <record name="field_content_type" javaclass="com.wm.util.Values">
+      <value name="contentType">1</value>
+      <value name="internalType">reference</value>
+      <value name="dataTypeVersion">dtVersion2</value>
+      <array name="targetNames" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">string</value>
+        </record>
+      </array>
+    </record>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" FIELD="/EventMsg;4;0;EventHandling.docs:EventMsg/EventMsg;2;0/Application;2;0/Service;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">GlobalTradeMgmt.maps:ffPartnerToXML</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">unknown</value>
+    <value name="node_comment"></value>
+    <record name="node_hints" javaclass="com.wm.util.Values">
+      <null name="field_usereditable"/>
+      <value name="field_largerEditor">false</value>
+      <value name="field_password">false</value>
+    </record>
+    <value name="field_name">Service</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <record name="field_content_type" javaclass="com.wm.util.Values">
+      <value name="contentType">1</value>
+      <value name="internalType">reference</value>
+      <value name="dataTypeVersion">dtVersion2</value>
+      <array name="targetNames" type="record" depth="1">
+        <record javaclass="com.wm.util.Values">
+          <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+          <value name="ncName">string</value>
+        </record>
+      </array>
+    </record>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+
+<MAP MODE="OUTPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="field_name">PartnerInbound</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs:sPartnerInboundDT</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="field_name">ProcessComplianceRequest</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_ref">GlobalTradeMgmt.docs.Precision.ProcessCompliance:ProcessComplianceRequest</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="field_name">lastError</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_ref">pub.event:exceptionInfo</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="field_name">exceptionInfo</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_ref">pub.event:exceptionInfo</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="field_name">EventMsg</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_ref">EventHandling.docs:EventMsg</value>
+      </record>
+    </array>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="field_name">generateEventResponse</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+    </array>
+    <value name="rec_closed">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPDELETE NAME="Dropper" FIELD="/exceptionInfo;4;0;pub.event:exceptionInfo">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/EventMsg;4;0;EventHandling.docs:EventMsg">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/lastError;4;0;pub.event:exceptionInfo">
+</MAPDELETE>
+</MAP>
+</INVOKE>
+</SEQUENCE>
+</SEQUENCE>
+</FLOW>
