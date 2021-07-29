@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP TIMEOUT="" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <null name="field_usereditable"/>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">senderID</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="is_public">false</value>
+        <value name="field_name">receiverID</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <null name="field_usereditable"/>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">agreementID</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">tpaData</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">SmartEDI.Route.Common.Documents.EnterpriseTPA:doc_initEnterpriseTPA</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/tpaData;4;0;SmartEDI.Route.Common.Documents.EnterpriseTPA:doc_initEnterpriseTPA/doc_ENTTPA;4;0;SmartEDI.Route.Common.Documents.EnterpriseTPA:doc_EnterpriseTPA">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <record name="EnvironmentVariables" javaclass="com.wm.util.Values">
+      <record name="Environment" javaclass="com.wm.util.Values">
+        <value name="interfaceName">USINTXXXX</value>
+        <value name="emailTo"></value>
+        <value name="emailFrom">watt.sciquest.partnerEmailFrom</value>
+        <value name="emailSupport">watt.sciquest.supportEmail</value>
+        <value name="debugLevel">Info</value>
+        <value name="functionForDebug">DOCID-CLIENTIP</value>
+        <value name="emailServer">watt.sciquest.partnerEmailServer</value>
+        <value name="emailServerPort"></value>
+        <value name="postURL"></value>
+        <record name="args" javaclass="com.wm.util.Values">
+        </record>
+        <value name="environment">watt.sciquest.environment</value>
+        <value name="transformService"></value>
+        <value name="saveDocumentInTradingNetwork">true</value>
+        <value name="validationSchemaTemplate"></value>
+        <value name="validationSchemaSourceDocument"></value>
+        <value name="validationSchemaTargetDocument"></value>
+        <value name="responseDTD"></value>
+        <value name="ResponseProcessingService"></value>
+        <value name="encoding"></value>
+        <value name="server">watt.sciquest.serverName</value>
+        <value name="currentDate">MM/dd/yyyy</value>
+        <value name="identity"></value>
+        <value name="sharedSecret"></value>
+        <value name="fileName"></value>
+        <value name="filePath"></value>
+        <value name="integrationStep"></value>
+        <value name="integrationName"></value>
+        <value name="customerID"></value>
+      </record>
+    </record>
+    <record name="RoutingConfiguration" javaclass="com.wm.util.Values">
+      <value name="@version"></value>
+      <value name="@encoding"></value>
+      <record name="Configuration" javaclass="com.wm.util.Values">
+        <record name="Inbound" javaclass="com.wm.util.Values">
+          <value name="partnerFlag"></value>
+          <value name="SenderID"></value>
+          <value name="ReceiverID"></value>
+          <value name="BODID"></value>
+          <value name="Data3"></value>
+          <value name="Data4"></value>
+          <value name="Data5"></value>
+          <value name="TNDocumentTypeName"></value>
+          <value name="ISDocumentType"></value>
+          <value name="InterfaceNumber"></value>
+          <value name="PublishableDocTypeName"></value>
+          <value name="MappingServiceName"></value>
+          <record name="doc_routingInfo" javaclass="com.wm.util.Values">
+            <record name="Routing" javaclass="com.wm.util.Values">
+              <record name="Compression" javaclass="com.wm.util.Values">
+                <value name="Method"></value>
+              </record>
+              <record name="IntegrationDetails" javaclass="com.wm.util.Values">
+                <value name="InterfaceNumber"></value>
+              </record>
+              <record name="Protocol" javaclass="com.wm.util.Values">
+                <record name="FTP" javaclass="com.wm.util.Values">
+                  <value name="CustomCommand"></value>
+                  <value name="Username"></value>
+                  <value name="TransferMode"></value>
+                  <value name="TransferType"></value>
+                  <value name="Encryption"></value>
+                  <value name="Decryption"></value>
+                  <value name="Passphrase"></value>
+                  <value name="TNExtField"></value>
+                  <value name="FilePattern"></value>
+                  <value name="FileName"></value>
+                  <value name="Timestamp"></value>
+                  <value name="LocalFTPFolder"></value>
+                  <value name="LocalFilePathName"></value>
+                  <value name="DeleteLocalFile"></value>
+                  <value name="RemoteFileName"></value>
+                  <value name="DeleteRemoteFile"></value>
+                  <value name="ArchiveFiles"></value>
+                  <value name="ArchiveLocation"></value>
+                  <value name="UseOriginalFileName"></value>
+                  <value name="Notification"></value>
+                  <value name="Multipublish"></value>
+                </record>
+                <record name="FTPA" javaclass="com.wm.util.Values">
+                </record>
+                <record name="HTTP" javaclass="com.wm.util.Values">
+                </record>
+                <record name="HTPS" javaclass="com.wm.util.Values">
+                  <value name="Decryption"></value>
+                  <value name="Passphrase"></value>
+                  <value name="ResponseType"></value>
+                  <value name="ProcessResponse"></value>
+                  <value name="ResponseProcessingService"></value>
+                  <value name="ResponseField"></value>
+                  <value name="ResponseDocumentType"></value>
+                </record>
+                <record name="SMTP" javaclass="com.wm.util.Values">
+                </record>
+                <record name="SOAP" javaclass="com.wm.util.Values">
+                  <value name="HandleSOAPFault">Y</value>
+                  <value name="TNExtField"></value>
+                  <value name="WebServiceName"></value>
+                  <value name="PreProcessingServiceName"></value>
+                  <value name="ResponseType"></value>
+                  <value name="ProcessResponse"></value>
+                  <value name="InputFieldMappingService"></value>
+                  <value name="InputFieldMapping"></value>
+                  <value name="ResponseProcessingService"></value>
+                  <value name="ResponseField"></value>
+                  <value name="ResponseDocumentType"></value>
+                </record>
+                <record name="Custom" javaclass="com.wm.util.Values">
+                  <value name="RoutingMethods"></value>
+                  <value name="TNExtField"></value>
+                  <value name="SmtpNotification"></value>
+                  <value name="ProcessingServiceName"></value>
+                </record>
+              </record>
+              <value name="StatusNotification"></value>
+              <record name="Multipublish" javaclass="com.wm.util.Values">
+                <record name="MultiPublish" javaclass="com.wm.util.Values">
+                  <record name="Inbound" javaclass="com.wm.util.Values">
+                  </record>
+                  <record name="Outbound" javaclass="com.wm.util.Values">
+                  </record>
+                </record>
+              </record>
+              <record name="PointToPoint" javaclass="com.wm.util.Values">
+                <record name="PointToPoint" javaclass="com.wm.util.Values">
+                  <value name="ChunkCount"></value>
+                  <value name="CountService"></value>
+                  <value name="DataService"></value>
+                  <value name="FilePath"></value>
+                  <value name="FileName"></value>
+                  <value name="UpdateService"></value>
+                  <value name="DeleteService"></value>
+                  <value name="FileNameService"></value>
+                </record>
+              </record>
+            </record>
+          </record>
+        </record>
+        <record name="Outbound" javaclass="com.wm.util.Values">
+          <value name="partnerFlag"></value>
+          <value name="SenderName"></value>
+          <value name="ReceiverName"></value>
+          <value name="BODID"></value>
+          <value name="TNDocumentTypeName"></value>
+          <value name="ISDocumentType"></value>
+          <value name="InterfaceNumber"></value>
+          <value name="PublishableDocTypeName"></value>
+          <value name="MappingServiceName"></value>
+          <record name="doc_routingInfo" javaclass="com.wm.util.Values">
+            <record name="Routing" javaclass="com.wm.util.Values">
+              <record name="Compression" javaclass="com.wm.util.Values">
+                <value name="Method"></value>
+              </record>
+              <record name="IntegrationDetails" javaclass="com.wm.util.Values">
+                <value name="InterfaceNumber"></value>
+              </record>
+              <record name="Protocol" javaclass="com.wm.util.Values">
+                <record name="FTP" javaclass="com.wm.util.Values">
+                  <value name="CustomCommand"></value>
+                  <value name="Username"></value>
+                  <value name="TransferMode"></value>
+                  <value name="TransferType"></value>
+                  <value name="Encryption"></value>
+                  <value name="Decryption"></value>
+                  <value name="Passphrase"></value>
+                  <value name="TNExtField"></value>
+                  <value name="FilePattern"></value>
+                  <value name="FileName"></value>
+                  <value name="Timestamp"></value>
+                  <value name="LocalFTPFolder"></value>
+                  <value name="LocalFilePathName"></value>
+                  <value name="DeleteLocalFile"></value>
+                  <value name="RemoteFileName"></value>
+                  <value name="DeleteRemoteFile"></value>
+                  <value name="ArchiveFiles"></value>
+                  <value name="ArchiveLocation"></value>
+                  <value name="UseOriginalFileName"></value>
+                  <value name="Notification"></value>
+                  <value name="Multipublish"></value>
+                </record>
+                <record name="FTPA" javaclass="com.wm.util.Values">
+                </record>
+                <record name="HTTP" javaclass="com.wm.util.Values">
+                </record>
+                <record name="HTPS" javaclass="com.wm.util.Values">
+                  <value name="Decryption"></value>
+                  <value name="Passphrase"></value>
+                  <value name="ResponseType"></value>
+                  <value name="ProcessResponse"></value>
+                  <value name="ResponseProcessingService"></value>
+                  <value name="ResponseField"></value>
+                  <value name="ResponseDocumentType"></value>
+                </record>
+                <record name="SMTP" javaclass="com.wm.util.Values">
+                </record>
+                <record name="SOAP" javaclass="com.wm.util.Values">
+                  <value name="HandleSOAPFault">Y</value>
+                  <value name="TNExtField"></value>
+                  <value name="WebServiceName"></value>
+                  <value name="PreProcessingServiceName"></value>
+                  <value name="ResponseType"></value>
+                  <value name="ProcessResponse"></value>
+                  <value name="InputFieldMappingService"></value>
+                  <value name="InputFieldMapping"></value>
+                  <value name="ResponseProcessingService"></value>
+                  <value name="ResponseField"></value>
+                  <value name="ResponseDocumentType"></value>
+                </record>
+                <record name="Custom" javaclass="com.wm.util.Values">
+                  <value name="RoutingMethods"></value>
+                  <value name="TNExtField"></value>
+                  <value name="SmtpNotification"></value>
+                  <value name="ProcessingServiceName"></value>
+                </record>
+              </record>
+              <value name="StatusNotification"></value>
+              <record name="Multipublish" javaclass="com.wm.util.Values">
+                <record name="MultiPublish" javaclass="com.wm.util.Values">
+                  <record name="Inbound" javaclass="com.wm.util.Values">
+                  </record>
+                  <record name="Outbound" javaclass="com.wm.util.Values">
+                  </record>
+                </record>
+              </record>
+              <record name="PointToPoint" javaclass="com.wm.util.Values">
+                <record name="PointToPoint" javaclass="com.wm.util.Values">
+                  <value name="ChunkCount"></value>
+                  <value name="CountService"></value>
+                  <value name="DataService"></value>
+                  <value name="FilePath"></value>
+                  <value name="FileName"></value>
+                  <value name="UpdateService"></value>
+                  <value name="DeleteService"></value>
+                  <value name="FileNameService"></value>
+                </record>
+              </record>
+            </record>
+          </record>
+        </record>
+      </record>
+    </record>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+</FLOW>

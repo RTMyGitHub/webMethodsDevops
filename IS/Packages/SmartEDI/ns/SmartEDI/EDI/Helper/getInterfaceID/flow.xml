@@ -1,0 +1,1293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<SEQUENCE TIMEOUT="" EXIT-ON="SUCCESS">
+  <COMMENT>Success</COMMENT>
+
+  <!-- nodes -->
+
+<SEQUENCE TIMEOUT="" EXIT-ON="FAILURE">
+  <COMMENT>Failure</COMMENT>
+
+  <!-- nodes -->
+
+<MAP TIMEOUT="" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+</MAP>
+
+<BRANCH TIMEOUT="" SWITCH="/direction">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="outbound" TIMEOUT="" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<BRANCH TIMEOUT="" SWITCH="/EDIEvent/env/ENTEDITransaction">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="/.+/" TIMEOUT="" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<LOOP TIMEOUT="" IN-ARRAY="/EDITPA/ENTEDITPA/OUTBOUND/X12/GSPair">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<BRANCH TIMEOUT="" LABELEXPRESSIONS="true">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="%EDITPA/ENTEDITPA/OUTBOUND/X12/GSPair/ST01TransactionCode%==%EDIEvent/env/ENTEDITransaction%" TIMEOUT="" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP TIMEOUT="" MODE="STANDALONE">
+  <COMMENT>Carry variables to parent, map EDIEvent</COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">false</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">direction</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+          <value>inbound</value>
+          <value>outbound</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">EDITPA</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">SmartEDI.EDI.doc:ENTEDITPA</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">EDIEvent</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">SmartEDI.EDI.doc:EDIEvent</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">false</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">direction</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+          <value>inbound</value>
+          <value>outbound</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">EDITPA</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">SmartEDI.EDI.doc:ENTEDITPA</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">EDIEvent</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">SmartEDI.EDI.doc:EDIEvent</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">$iteration</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY NAME="Link" FROM="/EDITPA;4;0;SmartEDI.EDI.doc:ENTEDITPA/ENTEDITPA;4;0;SmartEDI.EDI.doc:EDITPA/OUTBOUND;2;0/X12;2;0/GSPair;2;0/InterfaceID;1;0" TO="/EDIEvent;4;0;SmartEDI.EDI.doc:EDIEvent/env;4;0;SmartEDI.EDI.doc:env/InterfaceName;1;0">
+</MAPCOPY>
+
+<MAPCOPY NAME="Link" FROM="/EDITPA;4;0;SmartEDI.EDI.doc:ENTEDITPA/ENTEDITPA;4;0;SmartEDI.EDI.doc:EDITPA/OUTBOUND;2;0/X12;2;0/GSPair;2;0/InterfaceDescription;1;0" TO="/EDIEvent;4;0;SmartEDI.EDI.doc:EDIEvent/env;4;0;SmartEDI.EDI.doc:env/InterfaceDescription;1;0">
+</MAPCOPY>
+</MAP>
+
+<EXIT FROM="$loop" SIGNAL="SUCCESS" FAILURE-MESSAGE="">
+  <COMMENT>Match, exit loop</COMMENT>
+</EXIT>
+</SEQUENCE>
+</BRANCH>
+</LOOP>
+
+<BRANCH TIMEOUT="" SWITCH="/EDIEvent/env/InterfaceName">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="$null" TIMEOUT="" EXIT-ON="FAILURE">
+  <COMMENT>EDI Framework Interface</COMMENT>
+
+  <!-- nodes -->
+
+<MAP TIMEOUT="" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">false</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">direction</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+          <value>inbound</value>
+          <value>outbound</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">EDITPA</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">SmartEDI.EDI.doc:ENTEDITPA</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">EDIEvent</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">SmartEDI.EDI.doc:EDIEvent</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/EDIEvent;4;0;SmartEDI.EDI.doc:EDIEvent/env;4;0;SmartEDI.EDI.doc:env/InterfaceName;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">EDIINT001</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_comment"></value>
+    <record name="node_hints" javaclass="com.wm.util.Values">
+      <value name="field_usereditable">true</value>
+      <value name="field_largerEditor">false</value>
+      <value name="field_password">false</value>
+    </record>
+    <value name="is_public">false</value>
+    <value name="field_name">InterfaceName</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <array name="field_options" type="value" depth="1">
+      <value>INT001</value>
+      <value>INT002</value>
+      <value>INT003</value>
+      <value>INT004</value>
+      <value>INT005</value>
+      <value>INT006</value>
+      <value>INT007</value>
+      <value>INT008</value>
+      <value>INT009</value>
+      <value>INT010</value>
+      <value>INT011</value>
+      <value>INT012</value>
+      <value>INT013</value>
+      <value>INT014</value>
+      <value>INT015</value>
+      <value>INT016</value>
+      <value>INT017</value>
+      <value>INT018</value>
+      <value>INT019</value>
+      <value>INT020</value>
+      <value>INT021</value>
+      <value>INT022</value>
+      <value>INT023</value>
+      <value>INT024</value>
+      <value>INT025</value>
+      <value>INT026</value>
+      <value>INT027</value>
+      <value>INT028</value>
+      <value>INT029</value>
+      <value>INT030</value>
+      <value>INT031</value>
+      <value>INT032</value>
+      <value>INT033</value>
+      <value>INT034</value>
+      <value>INT035</value>
+      <value>INT036</value>
+      <value>INT037</value>
+      <value>INT038</value>
+      <value>INT039</value>
+      <value>INT040</value>
+      <value>INT041</value>
+      <value>INT042</value>
+      <value>INT047</value>
+      <value>INT048</value>
+      <value>INT049</value>
+      <value>INT050</value>
+      <value>INT051</value>
+      <value>INT052</value>
+      <value>INT053</value>
+      <value>INT054</value>
+      <value>INT055</value>
+      <value>INT056</value>
+      <value>INT057</value>
+      <value>INT058</value>
+      <value>INT059</value>
+      <value>INT060</value>
+      <value>INT061</value>
+      <value>INT062</value>
+      <value>INT063</value>
+      <value>INT064</value>
+      <value>INT065</value>
+      <value>INT066</value>
+      <value>INT067</value>
+      <value>INT068</value>
+      <value>INT069</value>
+      <value>INT070</value>
+      <value>INT071</value>
+      <value>INT072</value>
+      <value>INT073</value>
+      <value>INT074</value>
+      <value>INT075</value>
+      <value>INT076</value>
+      <value>INT077</value>
+      <value>INT078</value>
+      <value>INT079</value>
+      <value>INT080</value>
+      <value>INT081</value>
+      <value>INT082</value>
+      <value>INT083</value>
+      <value>INT084</value>
+      <value>INT085</value>
+      <value>INT086</value>
+      <value>INT087</value>
+      <value>INT088</value>
+      <value>INT089</value>
+      <value>INT090</value>
+      <value>INT091</value>
+      <value>INT092</value>
+      <value>INT093</value>
+      <value>INT094</value>
+      <value>INT095</value>
+      <value>INT096</value>
+      <value>INT097</value>
+      <value>INT098</value>
+      <value>INT099</value>
+      <value>INT100</value>
+      <value>USINT0001</value>
+      <value>USINT0002</value>
+      <value>USINT0003</value>
+      <value>USINT0004</value>
+      <value>USINT0005</value>
+      <value>USINT0006</value>
+      <value>USINT0007</value>
+      <value>USINT0008</value>
+      <value>USINT0009</value>
+      <value>USINT0010</value>
+      <value>USINT0011</value>
+      <value>USINT0012</value>
+      <value>USINT0013</value>
+      <value>USINT0014</value>
+      <value>USINT0015</value>
+      <value>USINT0016</value>
+      <value>USINT0017</value>
+      <value>USINT0018</value>
+      <value>USINT0019</value>
+      <value>USINT0020</value>
+      <value>USINT0021</value>
+      <value>USINT0022</value>
+      <value>USINT0023</value>
+      <value>USINT0024</value>
+      <value>USINT0025</value>
+      <value>USINT0026</value>
+      <value>USINT0027</value>
+      <value>USINT0028</value>
+      <value>USINT0029</value>
+      <value>USINT0030</value>
+      <value>USINT0031</value>
+      <value>USINT0032</value>
+      <value>USINT0033</value>
+      <value>USINT0034</value>
+      <value>USINT0035</value>
+      <value>USINT0036</value>
+      <value>USINT0037Q</value>
+      <value>USINT0037P</value>
+      <value>USINT0038</value>
+      <value>USINT0039</value>
+      <value>USINT0040</value>
+      <value>USINT0041</value>
+      <value>USINT0042</value>
+      <value>USINT0043</value>
+      <value>USINT0044</value>
+      <value>USINT0045</value>
+      <value>USINT0046</value>
+      <value>USINT0047</value>
+      <value>USINT0048</value>
+      <value>USINT0049</value>
+      <value>USINT0050</value>
+      <value>USINT0063</value>
+      <value>USINT0087</value>
+      <value>USINT0091</value>
+      <value>USINT0092</value>
+      <value>USINT0093</value>
+      <value>USINT0094</value>
+      <value>IMS001</value>
+      <value>USINT0205</value>
+      <value>USINT0208</value>
+      <value>USINT0210</value>
+      <value>USINT0200</value>
+      <value>USINT0202</value>
+      <value>USINT0203</value>
+      <value>USINT0600</value>
+      <value>USINT0109</value>
+      <value>USINT0105</value>
+      <value>USINT0106</value>
+      <value>USINT0110</value>
+      <value>USINT0111</value>
+      <value>USINT0222</value>
+      <value>USINT0223</value>
+      <value>USINT0224</value>
+      <value>USINT0225</value>
+      <value>USINT0226</value>
+      <value>USINT0211</value>
+      <value>USINT0212</value>
+      <value>USINT0213</value>
+      <value>USINT0214</value>
+      <value>USINT0215</value>
+      <value>USINT0216</value>
+      <value>USINT0217</value>
+      <value>USINT0088</value>
+      <value>USINT0231</value>
+      <value>USINT0233</value>
+      <value>USINT0234</value>
+      <value>USINT0235</value>
+      <value>USINT0236</value>
+      <value>USINT0237</value>
+      <value>USINT0238</value>
+      <value>USINT0232</value>
+      <value>USINT0239</value>
+      <value>USINT0240</value>
+      <value>USINT0241</value>
+      <value>USINT0242</value>
+      <value>USINT0243</value>
+      <value>USINT0244</value>
+      <value>USINT0245</value>
+      <value>USINT0246</value>
+      <value>USINT0248</value>
+      <value>USINT0249</value>
+      <value>USINT0251</value>
+      <value>USINT0252</value>
+      <value>USINT0253</value>
+      <value>USINT0256</value>
+      <value>USINT0257</value>
+      <value>USINT0259</value>
+      <value>USINT0260</value>
+      <value>USINT0261</value>
+      <value>USINT0262</value>
+      <value>USINT0263</value>
+      <value>USINT0266</value>
+      <value>USINT0268</value>
+      <value>USINT0272</value>
+      <value>USINT0273</value>
+      <value>USINT0274</value>
+      <value>USINT0275</value>
+      <value>USINT0276</value>
+      <value>USINT0280</value>
+      <value>USINT0281</value>
+      <value>USINT0282</value>
+      <value>USINT0283</value>
+      <value>USINT0284</value>
+      <value>USINT0285</value>
+      <value>USINT0286</value>
+      <value>USINT0287</value>
+      <value>USINT0288</value>
+      <value>USINT0289</value>
+      <value>USINT0290</value>
+      <value>USINT0291</value>
+      <value>USINT0292</value>
+      <value>USINT0298</value>
+      <value>USINT0277</value>
+      <value>USINT0278</value>
+      <value>USINT0279</value>
+      <value>USINT0299</value>
+      <value>USINT0300</value>
+      <value>USINT0297</value>
+      <value>USINT0304</value>
+      <value>USINT0302</value>
+      <value>USINT0303</value>
+      <value>USINT0158</value>
+    </array>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/EDIEvent;4;0;SmartEDI.EDI.doc:EDIEvent/env;4;0;SmartEDI.EDI.doc:env/InterfaceDescription;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">EDI Framework Interface</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_comment"></value>
+    <record name="node_hints" javaclass="com.wm.util.Values">
+      <null name="field_usereditable"/>
+      <value name="field_largerEditor">false</value>
+      <value name="field_password">false</value>
+    </record>
+    <value name="is_public">false</value>
+    <value name="field_name">InterfaceDescription</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+</SEQUENCE>
+</BRANCH>
+</SEQUENCE>
+
+<SEQUENCE NAME="$null" TIMEOUT="" EXIT-ON="FAILURE">
+  <COMMENT>Can't recognized transaction</COMMENT>
+
+  <!-- nodes -->
+
+<EXIT FROM="$flow" SIGNAL="SUCCESS" FAILURE-MESSAGE="">
+  <COMMENT>SUCCESS</COMMENT>
+</EXIT>
+</SEQUENCE>
+</BRANCH>
+</SEQUENCE>
+
+<SEQUENCE NAME="inbound" TIMEOUT="" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<BRANCH TIMEOUT="" SWITCH="/EDIEvent/env/ENTEDITransaction">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="/.+/" TIMEOUT="" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<LOOP TIMEOUT="" IN-ARRAY="/EDITPA/ENTEDITPA/INBOUND/X12/GSPair">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<BRANCH TIMEOUT="" LABELEXPRESSIONS="true">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="%EDITPA/ENTEDITPA/INBOUND/X12/GSPair/ST01TransactionCode%==%EDIEvent/env/ENTEDITransaction%" TIMEOUT="" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP TIMEOUT="" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">false</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">direction</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+          <value>inbound</value>
+          <value>outbound</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">EDITPA</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">SmartEDI.EDI.doc:ENTEDITPA</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">EDIEvent</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">SmartEDI.EDI.doc:EDIEvent</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">false</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">direction</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+          <value>inbound</value>
+          <value>outbound</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">EDITPA</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">SmartEDI.EDI.doc:ENTEDITPA</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">EDIEvent</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">SmartEDI.EDI.doc:EDIEvent</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">$iteration</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY NAME="Link" FROM="/EDITPA;4;0;SmartEDI.EDI.doc:ENTEDITPA/ENTEDITPA;4;0;SmartEDI.EDI.doc:EDITPA/INBOUND;2;0/X12;2;0/GSPair;2;0/InterfaceID;1;0" TO="/EDIEvent;4;0;SmartEDI.EDI.doc:EDIEvent/env;4;0;SmartEDI.EDI.doc:env/InterfaceName;1;0">
+</MAPCOPY>
+
+<MAPCOPY NAME="Link" FROM="/EDITPA;4;0;SmartEDI.EDI.doc:ENTEDITPA/ENTEDITPA;4;0;SmartEDI.EDI.doc:EDITPA/INBOUND;2;0/X12;2;0/GSPair;2;0/InterfaceDescription;1;0" TO="/EDIEvent;4;0;SmartEDI.EDI.doc:EDIEvent/env;4;0;SmartEDI.EDI.doc:env/InterfaceDescription;1;0">
+</MAPCOPY>
+</MAP>
+
+<EXIT FROM="$loop" SIGNAL="SUCCESS" FAILURE-MESSAGE="">
+  <COMMENT>match, exit loop</COMMENT>
+</EXIT>
+</SEQUENCE>
+</BRANCH>
+</LOOP>
+
+<BRANCH TIMEOUT="" SWITCH="/EDIEvent/env/InterfaceName">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="$null" TIMEOUT="" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP TIMEOUT="" MODE="STANDALONE">
+  <COMMENT></COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">false</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">direction</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+          <value>inbound</value>
+          <value>outbound</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">EDITPA</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">SmartEDI.EDI.doc:ENTEDITPA</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">EDIEvent</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">SmartEDI.EDI.doc:EDIEvent</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/EDIEvent;4;0;SmartEDI.EDI.doc:EDIEvent/env;4;0;SmartEDI.EDI.doc:env/InterfaceName;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">EDIINT001</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_comment"></value>
+    <record name="node_hints" javaclass="com.wm.util.Values">
+      <value name="field_usereditable">true</value>
+      <value name="field_largerEditor">false</value>
+      <value name="field_password">false</value>
+    </record>
+    <value name="is_public">false</value>
+    <value name="field_name">InterfaceName</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <array name="field_options" type="value" depth="1">
+      <value>INT001</value>
+      <value>INT002</value>
+      <value>INT003</value>
+      <value>INT004</value>
+      <value>INT005</value>
+      <value>INT006</value>
+      <value>INT007</value>
+      <value>INT008</value>
+      <value>INT009</value>
+      <value>INT010</value>
+      <value>INT011</value>
+      <value>INT012</value>
+      <value>INT013</value>
+      <value>INT014</value>
+      <value>INT015</value>
+      <value>INT016</value>
+      <value>INT017</value>
+      <value>INT018</value>
+      <value>INT019</value>
+      <value>INT020</value>
+      <value>INT021</value>
+      <value>INT022</value>
+      <value>INT023</value>
+      <value>INT024</value>
+      <value>INT025</value>
+      <value>INT026</value>
+      <value>INT027</value>
+      <value>INT028</value>
+      <value>INT029</value>
+      <value>INT030</value>
+      <value>INT031</value>
+      <value>INT032</value>
+      <value>INT033</value>
+      <value>INT034</value>
+      <value>INT035</value>
+      <value>INT036</value>
+      <value>INT037</value>
+      <value>INT038</value>
+      <value>INT039</value>
+      <value>INT040</value>
+      <value>INT041</value>
+      <value>INT042</value>
+      <value>INT047</value>
+      <value>INT048</value>
+      <value>INT049</value>
+      <value>INT050</value>
+      <value>INT051</value>
+      <value>INT052</value>
+      <value>INT053</value>
+      <value>INT054</value>
+      <value>INT055</value>
+      <value>INT056</value>
+      <value>INT057</value>
+      <value>INT058</value>
+      <value>INT059</value>
+      <value>INT060</value>
+      <value>INT061</value>
+      <value>INT062</value>
+      <value>INT063</value>
+      <value>INT064</value>
+      <value>INT065</value>
+      <value>INT066</value>
+      <value>INT067</value>
+      <value>INT068</value>
+      <value>INT069</value>
+      <value>INT070</value>
+      <value>INT071</value>
+      <value>INT072</value>
+      <value>INT073</value>
+      <value>INT074</value>
+      <value>INT075</value>
+      <value>INT076</value>
+      <value>INT077</value>
+      <value>INT078</value>
+      <value>INT079</value>
+      <value>INT080</value>
+      <value>INT081</value>
+      <value>INT082</value>
+      <value>INT083</value>
+      <value>INT084</value>
+      <value>INT085</value>
+      <value>INT086</value>
+      <value>INT087</value>
+      <value>INT088</value>
+      <value>INT089</value>
+      <value>INT090</value>
+      <value>INT091</value>
+      <value>INT092</value>
+      <value>INT093</value>
+      <value>INT094</value>
+      <value>INT095</value>
+      <value>INT096</value>
+      <value>INT097</value>
+      <value>INT098</value>
+      <value>INT099</value>
+      <value>INT100</value>
+      <value>USINT0001</value>
+      <value>USINT0002</value>
+      <value>USINT0003</value>
+      <value>USINT0004</value>
+      <value>USINT0005</value>
+      <value>USINT0006</value>
+      <value>USINT0007</value>
+      <value>USINT0008</value>
+      <value>USINT0009</value>
+      <value>USINT0010</value>
+      <value>USINT0011</value>
+      <value>USINT0012</value>
+      <value>USINT0013</value>
+      <value>USINT0014</value>
+      <value>USINT0015</value>
+      <value>USINT0016</value>
+      <value>USINT0017</value>
+      <value>USINT0018</value>
+      <value>USINT0019</value>
+      <value>USINT0020</value>
+      <value>USINT0021</value>
+      <value>USINT0022</value>
+      <value>USINT0023</value>
+      <value>USINT0024</value>
+      <value>USINT0025</value>
+      <value>USINT0026</value>
+      <value>USINT0027</value>
+      <value>USINT0028</value>
+      <value>USINT0029</value>
+      <value>USINT0030</value>
+      <value>USINT0031</value>
+      <value>USINT0032</value>
+      <value>USINT0033</value>
+      <value>USINT0034</value>
+      <value>USINT0035</value>
+      <value>USINT0036</value>
+      <value>USINT0037Q</value>
+      <value>USINT0037P</value>
+      <value>USINT0038</value>
+      <value>USINT0039</value>
+      <value>USINT0040</value>
+      <value>USINT0041</value>
+      <value>USINT0042</value>
+      <value>USINT0043</value>
+      <value>USINT0044</value>
+      <value>USINT0045</value>
+      <value>USINT0046</value>
+      <value>USINT0047</value>
+      <value>USINT0048</value>
+      <value>USINT0049</value>
+      <value>USINT0050</value>
+      <value>USINT0063</value>
+      <value>USINT0087</value>
+      <value>USINT0091</value>
+      <value>USINT0092</value>
+      <value>USINT0093</value>
+      <value>USINT0094</value>
+      <value>IMS001</value>
+      <value>USINT0205</value>
+      <value>USINT0208</value>
+      <value>USINT0210</value>
+      <value>USINT0200</value>
+      <value>USINT0202</value>
+      <value>USINT0203</value>
+      <value>USINT0600</value>
+      <value>USINT0109</value>
+      <value>USINT0105</value>
+      <value>USINT0106</value>
+      <value>USINT0110</value>
+      <value>USINT0111</value>
+      <value>USINT0222</value>
+      <value>USINT0223</value>
+      <value>USINT0224</value>
+      <value>USINT0225</value>
+      <value>USINT0226</value>
+      <value>USINT0211</value>
+      <value>USINT0212</value>
+      <value>USINT0213</value>
+      <value>USINT0214</value>
+      <value>USINT0215</value>
+      <value>USINT0216</value>
+      <value>USINT0217</value>
+      <value>USINT0088</value>
+      <value>USINT0231</value>
+      <value>USINT0233</value>
+      <value>USINT0234</value>
+      <value>USINT0235</value>
+      <value>USINT0236</value>
+      <value>USINT0237</value>
+      <value>USINT0238</value>
+      <value>USINT0232</value>
+      <value>USINT0239</value>
+      <value>USINT0240</value>
+      <value>USINT0241</value>
+      <value>USINT0242</value>
+      <value>USINT0243</value>
+      <value>USINT0244</value>
+      <value>USINT0245</value>
+      <value>USINT0246</value>
+      <value>USINT0248</value>
+      <value>USINT0249</value>
+      <value>USINT0251</value>
+      <value>USINT0252</value>
+      <value>USINT0253</value>
+      <value>USINT0256</value>
+      <value>USINT0257</value>
+      <value>USINT0259</value>
+      <value>USINT0260</value>
+      <value>USINT0261</value>
+      <value>USINT0262</value>
+      <value>USINT0263</value>
+      <value>USINT0266</value>
+      <value>USINT0268</value>
+      <value>USINT0272</value>
+      <value>USINT0273</value>
+      <value>USINT0274</value>
+      <value>USINT0275</value>
+      <value>USINT0276</value>
+      <value>USINT0280</value>
+      <value>USINT0281</value>
+      <value>USINT0282</value>
+      <value>USINT0283</value>
+      <value>USINT0284</value>
+      <value>USINT0285</value>
+      <value>USINT0286</value>
+      <value>USINT0287</value>
+      <value>USINT0288</value>
+      <value>USINT0289</value>
+      <value>USINT0290</value>
+      <value>USINT0291</value>
+      <value>USINT0292</value>
+      <value>USINT0298</value>
+      <value>USINT0277</value>
+      <value>USINT0278</value>
+      <value>USINT0279</value>
+      <value>USINT0299</value>
+      <value>USINT0300</value>
+      <value>USINT0297</value>
+      <value>USINT0304</value>
+      <value>USINT0302</value>
+      <value>USINT0303</value>
+      <value>USINT0158</value>
+    </array>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/EDIEvent;4;0;SmartEDI.EDI.doc:EDIEvent/env;4;0;SmartEDI.EDI.doc:env/InterfaceDescription;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">EDI Framework Interface</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_comment"></value>
+    <record name="node_hints" javaclass="com.wm.util.Values">
+      <null name="field_usereditable"/>
+      <value name="field_largerEditor">false</value>
+      <value name="field_password">false</value>
+    </record>
+    <value name="is_public">false</value>
+    <value name="field_name">InterfaceDescription</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+</SEQUENCE>
+</BRANCH>
+</SEQUENCE>
+
+<SEQUENCE NAME="$null" TIMEOUT="" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<EXIT FROM="$flow" SIGNAL="SUCCESS" FAILURE-MESSAGE="">
+  <COMMENT></COMMENT>
+</EXIT>
+</SEQUENCE>
+</BRANCH>
+</SEQUENCE>
+
+<SEQUENCE NAME="$null" TIMEOUT="" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<EXIT FROM="$flow" SIGNAL="SUCCESS" FAILURE-MESSAGE="">
+  <COMMENT></COMMENT>
+</EXIT>
+</SEQUENCE>
+</BRANCH>
+</SEQUENCE>
+
+<SEQUENCE TIMEOUT="" EXIT-ON="DONE">
+  <COMMENT>Done</COMMENT>
+
+  <!-- nodes -->
+
+<INVOKE TIMEOUT="" SERVICE="pub.flow:getLastError" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+</MAP>
+
+<MAP MODE="OUTPUT">
+</MAP>
+</INVOKE>
+
+<EXIT FROM="$flow" SIGNAL="FAILURE" FAILURE-MESSAGE="Service %lastError/service% reported an error - %lastError/error%">
+  <COMMENT></COMMENT>
+</EXIT>
+</SEQUENCE>
+</SEQUENCE>
+</FLOW>

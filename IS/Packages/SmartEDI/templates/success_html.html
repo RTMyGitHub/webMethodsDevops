@@ -1,0 +1,98 @@
+<pre>
+ EDI Environment Attributes%nl%
+ ======================================================================%nl%
+ Server Name:         %value serverName%%nl%
+ Server Port:         %value port%%nl%
+ ServiceName:         %value EDIEvent/env/ServiceName%%nl%
+ InterfaceName:       %value EDIEvent/env/InterfaceName% %value EDIEvent/env/InterfaceDescription%%nl%
+ DocumentID:          %value EDIEvent/env/DocumentId%%nl%
+ ConversationID:      %value EDIEvent/env/ConversationID%%nl%
+ TN SenderProfile:    %value EDIEvent/env/SenderId%%nl%
+ TN ReceiverProfile:  %value EDIEvent/env/ReceiverId%%nl%
+
+
+ EDI Compliance Report%nl%
+ ======================================================================%nl%
+ %loop EDIEvent/env%
+ %ifvar ffCustomSchemaName -notempty%
+ Verified EDI File using CUSTOM - %value ffCustomSchemaName% Schema.%else%
+ Verified EDI File using STANDARD - %value ffStdSchemaName% Schema.%endif%
+
+ %ifvar SendNonCompliantData equals('true')%
+ WARNING :%nl%
+          TPA SendNonCompliantData FLAG IS SET TO %value SendNonCompliantData%,%nl%
+          %value ReceiverId% PARTNER MAY CHARGE BACK FOR SENDING NON-COMPLIANCE EDI DATA.%nl%
+          TO TURN OFF THIS WARNING, SET TPA SendNonCompliantData FLAG TO false.%nl%
+ %endif%
+
+ %ifvar ComplianceCheck equals('false')%
+ TPA ComplianceCheck Flag is set to - %value ComplianceCheck%%nl%
+ Error Report is diabled and EDI File may contains Error%nl%
+ %endif%
+ %endloop%
+ %loop errorsStatus%
+ +---------------------------------------------------------------------%nl%
+ |ErrorPosition:   %value errorPosition%%nl%
+ |ErrorMessage:    %value errorMessage%%nl%
+ |ErrorCode:       %value errorCode%%nl%
+ |Reference:       %value reference%%nl%
+ |ErrorPath:       %value errorPath%%nl%
+ |%loop childErrors%%nl%
+ -////+////////////////////////////////////////////////////////////////%nl%
+ |    |ErrorPosition:       %value errorPosition%%nl%
+ |    |ErrorMessage:        %value errorMessage%%nl%
+ |    |ErrorCode:           %value errorCode%%nl%
+ |    |Reference:           %value reference%%nl%
+ |    |BadData:             %value badData%%nl%
+ |    |ErrorPath:           %value errorPath%%nl%
+ |%end loop%%nl%
+ |%nl%
+ |%end loop%%nl%
+ +----------------------------------------------------------------------%nl%
+
+
+ %nl%
+ %ifvar direction equals('outboundEDI')%Outbound EDI File Generated%endif%
+ %ifvar direction equals('inboundEDI')%Inbound EDI File Received%endif%
+ %nl%
+=======================================================================%nl%
+Interchange Information:
++---------------------------------------------------------------------+%nl%
+|Standard-Version:                %value standard%-%value version%%nl%
+|SenderQual-ID:                   %value SenderQualifier%-%value SenderIdentifier%%nl%
+|ReceiverQual-ID:                 %value ReceiverQualifier%-%value ReceiverIdentifier%%nl%
+|InterchangeControlNumber:        %value EnvelopeID%%nl%
+|Date-Time:                       %value date%-%value time%%nl%
+|Acknowledgement Requested:       (0-false,1-true) - %value ACKrequested%%nl%
++---------------------------------------------------------------------+%nl%
+%loop group%
+Group Information:
++---------------------------------------------------------------------+%nl%
+|SenderID:                        %value SenderID%%nl%
+|ReceiverID:                      %value ReceiverID%%nl%
+|Date-Time:                       %value date%-%value time%%nl%
+|GroupType:                       %value GroupType%%nl%
+|GroupControlNumber:              %value GroupID%%nl%
++---------------------------------------------------------------------+%nl%
+%end loop%
+
+
+EDI Raw Data
+-----------------------------------------------------------------------%nl%
+
+
+%value ediString%
+
+
+=======================================================================%nl%
+
+
+
+%comment%
+This is the text version output template of generateStatusReport service.
+%end%
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Please do not reply to this mail. This mail is webMethods system generated.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+</pre>

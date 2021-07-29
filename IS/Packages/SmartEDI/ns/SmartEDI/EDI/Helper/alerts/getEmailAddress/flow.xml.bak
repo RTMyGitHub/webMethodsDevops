@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT>SUCCESS</COMMENT>
+
+  <!-- nodes -->
+
+<SEQUENCE TIMEOUT="" EXIT-ON="SUCCESS">
+  <COMMENT>Main</COMMENT>
+
+  <!-- nodes -->
+
+<SEQUENCE TIMEOUT="" EXIT-ON="FAILURE">
+  <COMMENT>Try</COMMENT>
+
+  <!-- nodes -->
+
+<BRANCH TIMEOUT="" SWITCH="/EDIEvent/env/ServiceName">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="/.+/" TIMEOUT="" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<LOOP TIMEOUT="" IN-ARRAY="/EDITPA/ENTEDITPA/ALERTS/sendStatusEMail">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<BRANCH TIMEOUT="" LABELEXPRESSIONS="true">
+  <COMMENT>Evaluate - True</COMMENT>
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="%EDITPA/ENTEDITPA/ALERTS/sendStatusEMail/serviceName%==%/EDIEvent/env/ServiceName%" TIMEOUT="" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP TIMEOUT="" MODE="STANDALONE">
+  <COMMENT>Update env Email variables</COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">EDITPA</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">SmartEDI.EDI.doc:ENTEDITPA</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">EDIEvent</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">SmartEDI.EDI.doc:EDIEvent</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">EDITPA</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">SmartEDI.EDI.doc:ENTEDITPA</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">EDIEvent</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">SmartEDI.EDI.doc:EDIEvent</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">$iteration</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY NAME="Link" FROM="/EDITPA;4;0;SmartEDI.EDI.doc:ENTEDITPA/ENTEDITPA;4;0;SmartEDI.EDI.doc:EDITPA/ALERTS;2;0/sendStatusEMail;2;1/onSucess;2;0/emailAdresses;1;0" TO="/EDIEvent;4;0;SmartEDI.EDI.doc:EDIEvent/env;4;0;SmartEDI.EDI.doc:env/emailOnSucess;2;0/emailAdresses;1;0">
+</MAPCOPY>
+
+<MAPCOPY NAME="Link" FROM="/EDITPA;4;0;SmartEDI.EDI.doc:ENTEDITPA/ENTEDITPA;4;0;SmartEDI.EDI.doc:EDITPA/ALERTS;2;0/sendStatusEMail;2;1/onSucess;2;0/emailTemplate;1;0" TO="/EDIEvent;4;0;SmartEDI.EDI.doc:EDIEvent/env;4;0;SmartEDI.EDI.doc:env/emailOnSucess;2;0/emailTemplate;1;0">
+</MAPCOPY>
+
+<MAPCOPY NAME="Link" FROM="/EDITPA;4;0;SmartEDI.EDI.doc:ENTEDITPA/ENTEDITPA;4;0;SmartEDI.EDI.doc:EDITPA/ALERTS;2;0/sendStatusEMail;2;1/onSucess;2;0/emailContentType;1;0" TO="/EDIEvent;4;0;SmartEDI.EDI.doc:EDIEvent/env;4;0;SmartEDI.EDI.doc:env/emailOnSucess;2;0/emailContentType;1;0">
+</MAPCOPY>
+
+<MAPCOPY NAME="Link" FROM="/EDITPA;4;0;SmartEDI.EDI.doc:ENTEDITPA/ENTEDITPA;4;0;SmartEDI.EDI.doc:EDITPA/ALERTS;2;0/sendStatusEMail;2;1/onFailure;2;0/emailAdresses;1;0" TO="/EDIEvent;4;0;SmartEDI.EDI.doc:EDIEvent/env;4;0;SmartEDI.EDI.doc:env/emailOnFailure;2;0/emailAdresses;1;0">
+</MAPCOPY>
+
+<MAPCOPY NAME="Link" FROM="/EDITPA;4;0;SmartEDI.EDI.doc:ENTEDITPA/ENTEDITPA;4;0;SmartEDI.EDI.doc:EDITPA/ALERTS;2;0/sendStatusEMail;2;1/onFailure;2;0/emailTemplate;1;0" TO="/EDIEvent;4;0;SmartEDI.EDI.doc:EDIEvent/env;4;0;SmartEDI.EDI.doc:env/emailOnFailure;2;0/emailTemplate;1;0">
+</MAPCOPY>
+
+<MAPCOPY NAME="Link" FROM="/EDITPA;4;0;SmartEDI.EDI.doc:ENTEDITPA/ENTEDITPA;4;0;SmartEDI.EDI.doc:EDITPA/ALERTS;2;0/sendStatusEMail;2;1/onFailure;2;0/emailContentType;1;0" TO="/EDIEvent;4;0;SmartEDI.EDI.doc:EDIEvent/env;4;0;SmartEDI.EDI.doc:env/emailOnFailure;2;0/emailContentType;1;0">
+</MAPCOPY>
+
+<MAPCOPY NAME="Link" FROM="/EDITPA;4;0;SmartEDI.EDI.doc:ENTEDITPA/ENTEDITPA;4;0;SmartEDI.EDI.doc:EDITPA/ALERTS;2;0/sendStatusEMail;2;1/onSucess;2;0/attachRawEDI;1;0" TO="/EDIEvent;4;0;SmartEDI.EDI.doc:EDIEvent/env;4;0;SmartEDI.EDI.doc:env/emailOnSucess;2;0/attachRawEDI;1;0">
+</MAPCOPY>
+
+<MAPCOPY NAME="Link" FROM="/EDITPA;4;0;SmartEDI.EDI.doc:ENTEDITPA/ENTEDITPA;4;0;SmartEDI.EDI.doc:EDITPA/ALERTS;2;0/sendStatusEMail;2;1/onFailure;2;0/attachRawEDI;1;0" TO="/EDIEvent;4;0;SmartEDI.EDI.doc:EDIEvent/env;4;0;SmartEDI.EDI.doc:env/emailOnFailure;2;0/attachRawEDI;1;0">
+</MAPCOPY>
+</MAP>
+
+<EXIT FROM="$loop" SIGNAL="SUCCESS" FAILURE-MESSAGE="">
+  <COMMENT>Exit Loop with SUCCESS</COMMENT>
+</EXIT>
+</SEQUENCE>
+</BRANCH>
+</LOOP>
+</SEQUENCE>
+
+<SEQUENCE NAME="$null" TIMEOUT="" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<EXIT FROM="$flow" SIGNAL="FAILURE" FAILURE-MESSAGE="Value in /EDIEvent/ent/ServiceName received null, Please set to your ServiceName">
+  <COMMENT>Raise Exception</COMMENT>
+</EXIT>
+</SEQUENCE>
+</BRANCH>
+</SEQUENCE>
+
+<SEQUENCE TIMEOUT="" EXIT-ON="DONE">
+  <COMMENT>Catch</COMMENT>
+
+  <!-- nodes -->
+
+<INVOKE TIMEOUT="" SERVICE="pub.flow:getLastError" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT>Gets last error thrown by system. Drop 'Log' variable.</COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+</MAP>
+
+<MAP MODE="OUTPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">EDITPA</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">SmartEDI.EDI.doc:ENTEDITPA</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">EDIEvent</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">SmartEDI.EDI.doc:EDIEvent</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="is_public">false</value>
+        <value name="field_name">lastError</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">pub.event:exceptionInfo</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="is_public">false</value>
+        <value name="field_name">Log</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">SmartEDI.Common.Exception.Document:doc_LogError</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPDELETE NAME="Dropper" FIELD="/Log;4;0;SmartEDI.Common.Exception.Document:doc_LogError">
+</MAPDELETE>
+</MAP>
+</INVOKE>
+
+<EXIT FROM="$flow" SIGNAL="FAILURE" FAILURE-MESSAGE="Service %lastError/service% reported an error - %lastError/error%">
+  <COMMENT>Exit the flow with FAILURE signal.</COMMENT>
+</EXIT>
+</SEQUENCE>
+</SEQUENCE>
+</FLOW>

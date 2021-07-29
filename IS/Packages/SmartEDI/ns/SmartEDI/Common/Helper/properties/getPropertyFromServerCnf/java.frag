@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">getPropertyFromServerCnf</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">Ly9kZWZpbmUgaW5wdXQgdmFyaWFibGVzIA0KSURhdGFDdXJzb3IgaWRjUGlwZWxpbmUgPSBwaXBl
+bGluZS5nZXRDdXJzb3IoKTsNCg0KU3RyaW5nIHNQcm9wZXJ0eU5hbWUgPSAiIjsNClN0cmluZyBz
+UHJvcGVydHlWYWx1ZSA9ICIiOw0KDQoNCi8vR2V0IHRoZSBpbnB1dCB2YWx1ZQ0KaWYgKGlkY1Bp
+cGVsaW5lLmZpcnN0ICgicHJvcGVydHlOYW1lIikpDQp7DQoJc1Byb3BlcnR5TmFtZSA9IChTdHJp
+bmcpIGlkY1BpcGVsaW5lLmdldFZhbHVlKCk7DQp9DQoNCi8vaW5zZXJ0IHRoZSBvdXRwdXQgaW50
+byB0aGUgcGlwZWxpbmUNCmlkY1BpcGVsaW5lLmluc2VydEFmdGVyKCJwcm9wZXJ0eVZhbHVlIiwg
+U3lzdGVtLmdldFByb3BlcnR5KHNQcm9wZXJ0eU5hbWUpKTsJDQoNCnNQcm9wZXJ0eU5hbWUgPSBu
+dWxsOw0Kc1Byb3BlcnR5VmFsdWUgPSBudWxsOw0KDQovL0Fsd2F5cyBkZXN0cm95IGN1cnNvcnMg
+dGhhdCB5b3UgY3JlYXRlZA0KaWRjUGlwZWxpbmUuZGVzdHJveSgpOw0KDQoJ</value>
+</Values>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">isZipFile</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] object:0:required inputbytes</value>
+    <value>[o] field:0:required iszipfile</value>
+  </array>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">SURhdGFDdXJzb3IgaWRjUGlwZWxpbmUgPSBudWxsOw0KDQpaaXBJbnB1dFN0cmVhbSB6aXBpbnB1
+dHN0cmVhbSA9IG51bGw7DQoNCnRyeXsJCQkJCQkNCglpZGNQaXBlbGluZSA9IHBpcGVsaW5lLmdl
+dEN1cnNvcigpOw0KCWJ5dGVbXSBpbnB1dEJ5dGVzID0gbnVsbDsNCglTdHJpbmcgcmVzdWx0ID0g
+ImZhbHNlIjsNCg0KCWlmIChpZGNQaXBlbGluZS5maXJzdCgiaW5wdXRieXRlcyIpKSB7DQoJCS8v
+Z2V0IHRoZSBpbnB1dEJ5dGVzIHZhbHVlIG9iamVjdCBvdXQgb2YgdGhlIHBpcGVsaW5lDQoJCWlu
+cHV0Qnl0ZXMgPSAoYnl0ZVtdKWlkY1BpcGVsaW5lLmdldFZhbHVlKCk7DQoJfQ0KCS8vaWYgaXQg
+aXMgbm90IGluIHRoZSBwaXBlbGluZSwgdGhlbiBoYW5kbGUgdGhlIGVycm9yDQoNCg0KCXppcGlu
+cHV0c3RyZWFtID0gbmV3IFppcElucHV0U3RyZWFtKG5ldyBCeXRlQXJyYXlJbnB1dFN0cmVhbShp
+bnB1dEJ5dGVzKSk7DQoNCglaaXBFbnRyeSB6aXBlbnRyeSA9IA0KemlwaW5wdXRzdHJlYW0uZ2V0
+TmV4dEVudHJ5KCk7DQoNCglpZih6aXBlbnRyeSAhPSBudWxsKSB7DQoJCXppcGlucHV0c3RyZWFt
+LmNsb3NlRW50cnkoKTsNCgkJcmVzdWx0ID0gInRydWUiOw0KCX0NCg0KDQoJaWRjUGlwZWxpbmUu
+aW5zZXJ0QWZ0ZXIoImlzemlwZmlsZSIsIHJlc3VsdCk7DQoNCn0vL2VuZCBvZiB0cnkgYmxvY2sN
+Cg0KY2F0Y2ggKEV4Y2VwdGlvbiBlKSANCnsNCgl0aHJvdyBuZXcgU2VydmljZUV4Y2VwdGlvbihl
+LmdldE1lc3NhZ2UoKSk7DQp9DQoNCmZpbmFsbHkNCnsNCglpZiAoemlwaW5wdXRzdHJlYW0gIT0g
+bnVsbCkNCgkJdHJ5IHsNCgkJCXppcGlucHV0c3RyZWFtLmNsb3NlKCk7DQoJCX0gY2F0Y2ggKElP
+RXhjZXB0aW9uIGV4KSB7DQoJCQl0aHJvdyBuZXcgU2VydmljZUV4Y2VwdGlvbihleC5nZXRNZXNz
+YWdlKCkpOyANCgkJfQ0KCS8vQWx3YXlzIGRlc3Ryb3kgY3Vyc29ycyB0aGF0IHlvdSBjcmVhdGVk
+DQoJaWRjUGlwZWxpbmUuZGVzdHJveSgpOw0KCQ0KfQ0K</value>
+</Values>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="encodeutf8">true</value>
+  <array name="imports" type="value" depth="1">
+    <value>com.wm.app.tn.util.qm.TNQuery</value>
+    <value>com.wm.app.tn.db.*</value>
+    <value>com.wm.app.tn.doc.*</value>
+    <value>com.wm.app.tn.err.EXMLException</value>
+    <value>com.wm.app.tn.profile.ProfileStore</value>
+    <value>com.wm.app.tn.profile.ProfileSummary</value>
+    <value>com.wm.app.tn.security.SecurityUtil</value>
+    <value>com.wm.app.tn.util.*</value>
+    <value>com.wm.app.tn.util.qm.TNQueryset</value>
+    <value>com.wm.util.coder.IDataCodable</value>
+    <value>java.text.*</value>
+    <value>java.util.*</value>
+    <value>java.io.UnsupportedEncodingException</value>
+    <value>com.wm.app.tn.profile.*</value>
+  </array>
+  <value name="shared"></value>
+  <value name="extends"></value>
+  <array name="implements" type="value" depth="1">
+  </array>
+</Values>

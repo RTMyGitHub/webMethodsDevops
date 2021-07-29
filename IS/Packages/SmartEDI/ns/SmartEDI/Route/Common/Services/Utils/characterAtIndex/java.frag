@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">characterAtIndex</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] field:0:required index</value>
+    <value>[i] field:0:required inString</value>
+    <value>[i] field:0:required baseIndex {"0","1"}</value>
+    <value>[o] field:0:required character</value>
+  </array>
+  <value name="subtype">unknown</value>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">SURhdGFDdXJzb3IgcGlwZWxpbmVDdXJzb3IgPSBwaXBlbGluZS5nZXRDdXJzb3IoKTsNClN0cmlu
+ZyBzdHJJbnB1dCA9IElEYXRhVXRpbC5nZXRTdHJpbmcocGlwZWxpbmVDdXJzb3IsICJpblN0cmlu
+ZyIgKTsNClN0cmluZyBpbmRleFN0cmluZyA9IElEYXRhVXRpbC5nZXRTdHJpbmcocGlwZWxpbmVD
+dXJzb3IsICJpbmRleCIgKTsNClN0cmluZyBzdHJpbmdBcnJheVtdID0gbnVsbDsNClN0cmluZyBi
+YXNlSW5kZXhTdHJpbmcgPSBJRGF0YVV0aWwuZ2V0U3RyaW5nKHBpcGVsaW5lQ3Vyc29yLCAiYmFz
+ZUluZGV4Iik7DQppbnQgaW5kZXggPSAxOw0KaW50IGJhc2VJbmRleCA9IDA7DQoNCnRyeSB7IA0K
+CWluZGV4PUludGVnZXIucGFyc2VJbnQoaW5kZXhTdHJpbmcpOyANCgliYXNlSW5kZXg9SW50ZWdl
+ci5wYXJzZUludChiYXNlSW5kZXhTdHJpbmcpOwkNCn0gDQoJY2F0Y2goTnVtYmVyRm9ybWF0RXhj
+ZXB0aW9uIGUpew0KfSANCg0KDQppZihzdHJJbnB1dCA9PSBudWxsKSB7DQoJdGhyb3cgbmV3IEls
+bGVnYWxBcmd1bWVudEV4Y2VwdGlvbigic3RySW5wdXQgZmllbGQgY2FuIG5vdCBiZSBudWxsIik7
+DQp9DQoNCmlmIChiYXNlSW5kZXggPT0gMSkgew0KCWluZGV4LS07DQp9DQoNCmludCBzdHJMZW5n
+dGggPSBzdHJJbnB1dC5sZW5ndGgoKTsNCg0KaWYoc3RyTGVuZ3RoIDwgaW5kZXgpIHsNCgl0aHJv
+dyBuZXcgSWxsZWdhbEFyZ3VtZW50RXhjZXB0aW9uKCJyZXF1ZXN0ZWQgaW5kZXggaXMgb3V0c2lk
+ZSB0aGUgcmFuZ2Ugb2YgdGhlIGlucHV0IHN0cmluZyIpOw0KfQ0KDQoNClN0cmluZyBjaGFyQXRJ
+bmRleCA9IHN0cklucHV0LnN1YnN0cmluZyhpbmRleCwgKytpbmRleCk7DQoNCi8vIERvbid0IG5l
+ZWQgdGhpcyBub3csIGJ1dCBjb3VsZCBjb21lIGluIGhhbmR5IGZvciBhIHJlYWwgU3RyaW5nVG9B
+cnJheSBmdW5jdGlvbg0KLyoNCi8vc2V0IGFycmF5IHNpemUNCmludCBhcnJheXNpemU9MTsNCmFy
+cmF5c2l6ZSA9IHN0ckxlbmd0aDsNCg0Kc3RyaW5nQXJyYXkgPSBuZXcgU3RyaW5nW2FycmF5c2l6
+ZV07DQoNCmZvciAoaW50IGkgPSAwOyBpIDwgYXJyYXlzaXplOyBpKyspIHsNCglpbnQgaiA9IGkr
+MTsNCglzdHJpbmdBcnJheVtpXSA9IHN0cklucHV0LnN1YnN0cmluZyhpLCBqKTsNCglzdHJpbmdD
+b25jYXQgPSBzdHJpbmdDb25jYXQgKyBzdHJJbnB1dC5zdWJzdHJpbmcoaSwgaik7DQp9DQoqLw0K
+Ly9TdHJpbmcgbXlDaGFyID0gc3RySW5wdXQuc3Vic3RyaW5nKDAsMSk7DQovL3N0cmluZ0FycmF5
+WzBdID0gbXlDaGFyOw0KDQpJRGF0YVV0aWwucHV0KHBpcGVsaW5lQ3Vyc29yLCAiY2hhcmFjdGVy
+IiwgY2hhckF0SW5kZXgpOw0KDQoJDQo=</value>
+</Values>
