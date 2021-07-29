@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">write</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] object:0:required stream</value>
+    <value>[i] object:0:required content</value>
+    <value>[i] field:0:optional newline {"true","false"}</value>
+  </array>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">SURhdGFDdXJzb3IgY3Vyc29yID0gcGlwZWxpbmUuZ2V0Q3Vyc29yKCk7DQoNCmJvb2xlYW4gbmV3
+bGluZSA9IGZhbHNlOw0KV3JpdGVyIHdyaXRlciA9IG51bGw7DQpPYmplY3Qgb2JqZWN0Ow0KT2Jq
+ZWN0IGNvbnRlbnQgPSBudWxsOw0KDQppZiAoY3Vyc29yLmZpcnN0KCJzdHJlYW0iKSkNCnsNCiAg
+b2JqZWN0ID0gY3Vyc29yLmdldFZhbHVlKCk7DQogIC8vIElmIHRoZSBpbnB1dCBvYmplY3QgaXMg
+YW4gaW5zdGFuY2Ugb2YgamF2YS5pby5PdXRwdXRTdHJlYW0sIGNyZWF0ZSBhDQogIC8vIGphdmEu
+aW8uQnVmZmVyZWRXcml0ZXIgb2JqZWN0IGZyb20gaXQuDQogIGlmIChvYmplY3QgaW5zdGFuY2Vv
+ZiBPdXRwdXRTdHJlYW0pDQogIHsNCiAgICB3cml0ZXIgPSBuZXcgQnVmZmVyZWRXcml0ZXIobmV3
+IE91dHB1dFN0cmVhbVdyaXRlcigoT3V0cHV0U3RyZWFtKSBvYmplY3QpKTsNCiAgfQ0KICBlbHNl
+IGlmIChvYmplY3QgaW5zdGFuY2VvZiBXcml0ZXIpDQogIHsNCiAgICB3cml0ZXIgPSAoV3JpdGVy
+KSBvYmplY3Q7DQogIH0NCn0NCg0KaWYgKHdyaXRlciA9PSBudWxsKQ0Kew0KICB0aHJvdyBuZXcg
+U2VydmljZUV4Y2VwdGlvbigiTWlzc2luZyBpbnB1dCAnc3RyZWFtJyIpOw0KfQ0KDQovLyBHZXQg
+dGhlIGNvbnRlbnQgdG8gYmUgd3JpdHRlbg0KaWYgKGN1cnNvci5maXJzdCgiY29udGVudCIpKQ0K
+ew0KICBjb250ZW50ID0gY3Vyc29yLmdldFZhbHVlKCk7DQp9DQoNCmlmIChjb250ZW50ID09IG51
+bGwpDQp7DQogIHRocm93IG5ldyBTZXJ2aWNlRXhjZXB0aW9uKCJNaXNzaW5nIGlucHV0ICdjb250
+ZW50JyIpOw0KfQ0KDQovLyBDcmVhdGUgc3RyaW5nIHJlcHJlbnRhdGlvbiBvZiB0aGUgY29udGVu
+dC4NClN0cmluZyBjb250ZW50U3RyaW5nID0gZm9ybWF0Q29udGVudChjb250ZW50KTsNCmlmIChj
+dXJzb3IuZmlyc3QoIm5ld2xpbmUiKSkNCnsNCiAgbmV3bGluZSA9IEJvb2xlYW4udmFsdWVPZigo
+U3RyaW5nKSBjdXJzb3IuZ2V0VmFsdWUoKSkuYm9vbGVhblZhbHVlKCk7DQp9DQoNCnRyeQ0Kew0K
+ICAvLyB3cml0ZSBvdXQgdGhlIHN0cmluZw0KICB3cml0ZXIud3JpdGUoY29udGVudFN0cmluZyk7
+DQogIGlmIChuZXdsaW5lKQ0KICB7DQogICAgd3JpdGVyLndyaXRlKGxpbmVTZXBhcmF0b3IpOw0K
+ICB9DQogIHdyaXRlci5mbHVzaCgpOw0KfQ0KY2F0Y2ggKElPRXhjZXB0aW9uIGlvZSkNCnsNCiAg
+dGhyb3cgbmV3IFNlcnZpY2VFeGNlcHRpb24oaW9lLmdldE1lc3NhZ2UoKSk7DQp9DQoNCmN1cnNv
+ci5kZXN0cm95KCk7DQo=</value>
+</Values>

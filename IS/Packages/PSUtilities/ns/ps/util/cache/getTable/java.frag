@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">getTable</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] field:0:required lookupName</value>
+    <value>[i] field:1:optional lookupKeyNames</value>
+    <value>[i] field:0:optional dataRetrievalService</value>
+    <value>[i] field:0:optional maxAge</value>
+    <value>[o] record:1:required lookupData</value>
+  </array>
+  <value name="subtype">unknown</value>
+  <value name="sigtype">java 3.5</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">SURhdGFDdXJzb3IgY3Vyc29yID0gcGlwZWxpbmUuZ2V0Q3Vyc29yKCk7DQpTdHJpbmcgbG9va3Vw
+TmFtZSA9IElEYXRhVXRpbC5nZXRTdHJpbmcoY3Vyc29yLCAibG9va3VwTmFtZSIpOw0KDQpTdHJp
+bmdbXSBsb29rdXBLZXlOYW1lcyA9IElEYXRhVXRpbC5nZXRTdHJpbmdBcnJheShjdXJzb3IsICJs
+b29rdXBLZXlOYW1lcyIpOw0KU3RyaW5nIGRhdGFSZXRyaWV2YWxTZXJ2aWNlID0gSURhdGFVdGls
+LmdldFN0cmluZyhjdXJzb3IsICJkYXRhUmV0cmlldmFsU2VydmljZSIpOw0KU3RyaW5nIG1heEFn
+ZVN0ciA9IElEYXRhVXRpbC5nZXRTdHJpbmcoY3Vyc29yLCAibWF4QWdlIik7DQpsb25nIG1heEFn
+ZSA9IExvb2t1cENhY2hlVGFibGUuZGVmYXVsdE1heEFnZTsNCmlmIChtYXhBZ2VTdHIgIT0gbnVs
+bCkNCnsNCiAgbWF4QWdlID0gTG9uZy5wYXJzZUxvbmcobWF4QWdlU3RyKTsNCn0NCg0KaWYgKGxv
+b2t1cE5hbWUgPT0gbnVsbCB8fCBsb29rdXBOYW1lLmxlbmd0aCgpID09IDApDQp7DQogIGN1cnNv
+ci5kZXN0cm95KCk7DQogIHRocm93IG5ldyBTZXJ2aWNlRXhjZXB0aW9uKCJNaXNzaW5nIGlucHV0
+ICdsb29rdXBOYW1lJyIpOw0KfQ0KDQpMb29rdXBDYWNoZVRhYmxlIGxvb2t1cFRhYmxlID0gKExv
+b2t1cENhY2hlVGFibGUpIGxvb2t1cHMuZ2V0KGxvb2t1cE5hbWUpOw0KDQppZiAoKGxvb2t1cFRh
+YmxlID09IG51bGwgfHwgbG9va3VwVGFibGUuc2l6ZSgpID09IDApICYmIGRhdGFSZXRyaWV2YWxT
+ZXJ2aWNlICE9IG51bGwpDQp7DQogIGxvb2t1cFRhYmxlID0gbmV3IExvb2t1cENhY2hlVGFibGUo
+bG9va3VwS2V5TmFtZXMsIGRhdGFSZXRyaWV2YWxTZXJ2aWNlKTsNCiAgaWYgKGRhdGFSZXRyaWV2
+YWxTZXJ2aWNlICE9IG51bGwgJiYgZGF0YVJldHJpZXZhbFNlcnZpY2UubGVuZ3RoKCkgPiAwKQ0K
+ICB7DQogICAgcmVhZFRhYmxlKGxvb2t1cE5hbWUsIGxvb2t1cFRhYmxlKTsNCiAgICBpZiAobWF4
+QWdlID4gMCkNCiAgICB7DQogICAgICBsb29rdXBUYWJsZS5zZXRTZXRUb0V4cGlyZSh0cnVlKTsN
+CiAgICAgIGxvb2t1cFRhYmxlLnNldE1heEFnZShtYXhBZ2UpOw0KICAgIH0NCiAgfQ0KICBsb29r
+dXBzLnB1dChsb29rdXBOYW1lLCBsb29rdXBUYWJsZSk7DQp9DQoNCmlmIChsb29rdXBUYWJsZSAh
+PSBudWxsKQ0Kew0KICBpZiAobG9va3VwVGFibGUuaXNFeHBpcmVkKCkgfHwgbG9va3VwVGFibGUu
+c2l6ZSgpID09IDApDQogIHsNCiAgICByZWFkVGFibGUobG9va3VwTmFtZSwgbG9va3VwVGFibGUp
+Ow0KICB9DQoNCiAgSURhdGFVdGlsLnB1dChjdXJzb3IsICJsb29rdXBEYXRhIiwgZ2V0TG9va3Vw
+RGF0YShsb29rdXBUYWJsZSkpOw0KfQ0KZWxzZQ0Kew0KICB0aHJvdyBuZXcgU2VydmljZUV4Y2Vw
+dGlvbigiTG9va3VwICciICsgbG9va3VwTmFtZSArICInIGRvZXMgbm90IGV4aXN0IGluIGxvb2t1
+cCBjYWNoZS4iKTsNCn0NCmN1cnNvci5kZXN0cm95KCk7DQo=</value>
+</Values>

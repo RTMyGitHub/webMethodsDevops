@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">PTLatestBuild_myPTBuild_1407251765642</value>
+  <value name="version">2.01</value>
+  <value name="build">2.01</value>
+  <value name="patch_nums"></value>
+  <value name="description">QAINewBuild_</value>
+  <value name="target_pkg_version">2.01</value>
+  <value name="jvm_version">1.4.2_08</value>
+  <value name="source_server_version">8.2.2.0</value>
+  <value name="target_server_version">8.2.2.0</value>
+  <value name="time">2014-08-05 12:46:05 NDT</value>
+  <value name="type">full</value>
+  <null name="retainPatchHistory"/>
+  <value name="target_pkg_name">PSUtilities</value>
+  <null name="publisher"/>
+</Values>
