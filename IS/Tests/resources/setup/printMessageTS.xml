@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webMethodsTestSuite description="Auto Generated from Template" name="TS_printMessageTS.xml">
+    <webMethodsTestCase description="Generate a Test Wizard" name="TC_printMessage">
+        <service folder="TevaDevopsTest.services" name="printMessage">
+            <input>
+                <file filename="TevaDevopsTest_services_printMessage_input.xml"/>
+            </input>
+            <expected>
+                <file filename="TevaDevopsTest_services_printMessage_output.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+</webMethodsTestSuite>
